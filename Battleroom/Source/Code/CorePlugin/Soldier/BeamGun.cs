@@ -44,17 +44,17 @@ namespace Battleroom
 
         public void OnUpdate()
         {
-            if(IsFiring)
+            if (IsFiring)
             {
                 RayCastData data;
                 var furthestRange = Vector2.FromAngleLength(Transform.Angle, Range) + Transform.Pos.Xy;
                 RigidBody.RayCast(Transform.Pos.Xy, furthestRange, d => { return 1f; }, out data);
 
-                if(data.GameObj != null)
+                if (data.GameObj != null)
                 {
                     beamEnd = data.Pos;
                     var soldier = data.GameObj.GetComponent<Soldier>();
-                    if(soldier != null)
+                    if (soldier != null)
                     {
                         soldier.BeamTime += Time.LastDelta * 2;
                     }

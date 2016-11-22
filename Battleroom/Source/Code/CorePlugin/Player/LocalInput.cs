@@ -96,6 +96,16 @@ namespace Battleroom
                         Movement.Gripping = GripState.NO_GRIP;
                     }
                     break;
+                case Duality.Input.Key.Escape:
+                    if (Time.TimeMult > 0)
+                    {
+                        Time.Freeze();
+                    }
+                    else
+                    {
+                        Time.Resume();
+                    }
+                    break;
             }
         }
 

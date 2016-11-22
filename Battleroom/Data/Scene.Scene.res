@@ -80,13 +80,13 @@
                     <ignoreParent dataType="Bool">false</ignoreParent>
                     <parentTransform />
                     <pos dataType="Struct" type="Duality.Vector3">
-                      <X dataType="Float">562.983948</X>
-                      <Y dataType="Float">203.815277</Y>
+                      <X dataType="Float">1323.3302</X>
+                      <Y dataType="Float">-392.2815</Y>
                       <Z dataType="Float">0</Z>
                     </pos>
                     <posAbs dataType="Struct" type="Duality.Vector3">
-                      <X dataType="Float">562.983948</X>
-                      <Y dataType="Float">203.815277</Y>
+                      <X dataType="Float">1323.3302</X>
+                      <Y dataType="Float">-392.2815</Y>
                       <Z dataType="Float">0</Z>
                     </posAbs>
                     <scale dataType="Float">1</scale>
@@ -137,7 +137,7 @@
                         </item>
                       </_items>
                       <_size dataType="Int">2</_size>
-                      <_version dataType="Int">296</_version>
+                      <_version dataType="Int">320</_version>
                     </shapes>
                   </item>
                   <item dataType="Struct" type="Battleroom.RangeSensor" id="1058522610">
@@ -485,6 +485,34 @@
                             <item dataType="ObjectRef">760503682</item>
                           </invocationList>
                         </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="1686489882" multi="true">
+                          <method dataType="ObjectRef">3520568864</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="1571050424">
+                            <item dataType="ObjectRef">1686489882</item>
+                          </invocationList>
+                        </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="1935736274" multi="true">
+                          <method dataType="ObjectRef">3520568864</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="1069439536">
+                            <item dataType="ObjectRef">1935736274</item>
+                          </invocationList>
+                        </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="181286570" multi="true">
+                          <method dataType="ObjectRef">3520568864</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="3292159816">
+                            <item dataType="ObjectRef">181286570</item>
+                          </invocationList>
+                        </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="1329446178" multi="true">
+                          <method dataType="ObjectRef">3520568864</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="2863968128">
+                            <item dataType="ObjectRef">1329446178</item>
+                          </invocationList>
+                        </item>
                       </invocationList>
                     </EnteredRange>
                     <gameobj dataType="ObjectRef">3217682156</gameobj>
@@ -793,6 +821,34 @@
                             <item dataType="ObjectRef">1221583134</item>
                           </invocationList>
                         </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="2276951962" multi="true">
+                          <method dataType="ObjectRef">256412964</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="1435631004">
+                            <item dataType="ObjectRef">2276951962</item>
+                          </invocationList>
+                        </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="1785368782" multi="true">
+                          <method dataType="ObjectRef">256412964</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="955936560">
+                            <item dataType="ObjectRef">1785368782</item>
+                          </invocationList>
+                        </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="2983296938" multi="true">
+                          <method dataType="ObjectRef">256412964</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="3288715212">
+                            <item dataType="ObjectRef">2983296938</item>
+                          </invocationList>
+                        </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="280784190" multi="true">
+                          <method dataType="ObjectRef">256412964</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="1511228800">
+                            <item dataType="ObjectRef">280784190</item>
+                          </invocationList>
+                        </item>
                       </invocationList>
                     </LeftRange>
                     <range_ dataType="Float">20</range_>
@@ -1004,7 +1060,7 @@
                 </item>
               </_items>
               <_size dataType="Int">1</_size>
-              <_version dataType="Int">147</_version>
+              <_version dataType="Int">155</_version>
             </shapes>
           </item>
           <item dataType="Struct" type="Battleroom.Utilities.RectangularBody" id="2167613126">
@@ -1154,7 +1210,7 @@
                 </item>
               </_items>
               <_size dataType="Int">1</_size>
-              <_version dataType="Int">97</_version>
+              <_version dataType="Int">105</_version>
             </shapes>
           </item>
           <item dataType="Struct" type="Battleroom.Utilities.RectangularBody" id="282802224">
@@ -1238,7 +1294,7 @@
               <vertexArraysFree dataType="Struct" type="System.Collections.Generic.List`1[[Duality.RawList`1[[Duality.Drawing.VertexC1P3T2]]]]" id="3170440366">
                 <_items dataType="Array" type="Duality.RawList`1[[Duality.Drawing.VertexC1P3T2]][]" id="1856774480" length="4" />
                 <_size dataType="Int">0</_size>
-                <_version dataType="Int">3</_version>
+                <_version dataType="Int">24713</_version>
               </vertexArraysFree>
               <vertexArraysUsed dataType="Struct" type="System.Collections.Generic.List`1[[Duality.RawList`1[[Duality.Drawing.VertexC1P3T2]]]]" id="2422867658">
                 <_items dataType="Array" type="Duality.RawList`1[[Duality.Drawing.VertexC1P3T2]][]" id="314961196" length="4">
@@ -1252,11 +1308,7 @@
                           <G dataType="Byte">255</G>
                           <R dataType="Byte">255</R>
                         </Color>
-                        <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">219</X>
-                          <Y dataType="Float">0</Y>
-                          <Z dataType="Float">0</Z>
-                        </Pos>
+                        <Pos dataType="Struct" type="Duality.Vector3" />
                         <TexCoord dataType="Struct" type="Duality.Vector2">
                           <X dataType="Float">0.5</X>
                           <Y dataType="Float">0.5</Y>
@@ -1270,7 +1322,7 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">219</X>
+                          <X dataType="Float">0</X>
                           <Y dataType="Float">-10</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
@@ -1287,7 +1339,7 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">222.826828</X>
+                          <X dataType="Float">3.82683468</X>
                           <Y dataType="Float">-9.238795</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
@@ -1304,7 +1356,7 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">226.071075</X>
+                          <X dataType="Float">7.071068</X>
                           <Y dataType="Float">-7.071068</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
@@ -1321,7 +1373,7 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">228.2388</X>
+                          <X dataType="Float">9.238796</X>
                           <Y dataType="Float">-3.8268342</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
@@ -1338,7 +1390,7 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">229</X>
+                          <X dataType="Float">10</X>
                           <Y dataType="Float">0</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
@@ -1355,7 +1407,7 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">228.2388</X>
+                          <X dataType="Float">9.238796</X>
                           <Y dataType="Float">3.82683563</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
@@ -1372,7 +1424,7 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">226.071075</X>
+                          <X dataType="Float">7.071068</X>
                           <Y dataType="Float">7.071068</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
@@ -1389,7 +1441,7 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">222.826828</X>
+                          <X dataType="Float">3.82683468</X>
                           <Y dataType="Float">9.238796</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
@@ -1406,7 +1458,7 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">219</X>
+                          <X dataType="Float">1.90734863E-06</X>
                           <Y dataType="Float">10</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
@@ -1423,7 +1475,7 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">215.173172</X>
+                          <X dataType="Float">-3.82683229</X>
                           <Y dataType="Float">9.238796</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
@@ -1440,7 +1492,7 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">211.92894</X>
+                          <X dataType="Float">-7.071066</X>
                           <Y dataType="Float">7.07106972</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
@@ -1457,7 +1509,7 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">209.7612</X>
+                          <X dataType="Float">-9.238795</X>
                           <Y dataType="Float">3.82683563</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
@@ -1474,7 +1526,7 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">209</X>
+                          <X dataType="Float">-10</X>
                           <Y dataType="Float">0</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
@@ -1491,7 +1543,7 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">209.7612</X>
+                          <X dataType="Float">-9.238794</X>
                           <Y dataType="Float">-3.826836</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
@@ -1508,7 +1560,7 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">211.92894</X>
+                          <X dataType="Float">-7.07106543</X>
                           <Y dataType="Float">-7.07107</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
@@ -1525,7 +1577,7 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">215.173172</X>
+                          <X dataType="Float">-3.82683</X>
                           <Y dataType="Float">-9.238797</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
@@ -1542,7 +1594,7 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">219</X>
+                          <X dataType="Float">6.67572E-06</X>
                           <Y dataType="Float">-10</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
@@ -1555,7 +1607,7 @@
                   </item>
                 </_items>
                 <_size dataType="Int">1</_size>
-                <_version dataType="Int">4</_version>
+                <_version dataType="Int">24714</_version>
               </vertexArraysUsed>
             </buffer>
             <gameobj dataType="ObjectRef">3372874901</gameobj>
@@ -1586,6 +1638,857 @@
       <name dataType="String">Interface</name>
       <parent />
       <prefabLink />
+    </item>
+    <item dataType="Struct" type="Duality.GameObject" id="110497463">
+      <active dataType="Bool">true</active>
+      <children />
+      <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="3345790197">
+        <_items dataType="Array" type="Duality.Component[]" id="2031601270" length="8">
+          <item dataType="Struct" type="Duality.Components.Transform" id="2470812395">
+            <active dataType="Bool">true</active>
+            <angle dataType="Float">0</angle>
+            <angleAbs dataType="Float">0</angleAbs>
+            <angleVel dataType="Float">0</angleVel>
+            <angleVelAbs dataType="Float">0</angleVelAbs>
+            <deriveAngle dataType="Bool">true</deriveAngle>
+            <gameobj dataType="ObjectRef">110497463</gameobj>
+            <ignoreParent dataType="Bool">false</ignoreParent>
+            <parentTransform />
+            <pos dataType="Struct" type="Duality.Vector3">
+              <X dataType="Float">603.161255</X>
+              <Y dataType="Float">-400.721924</Y>
+              <Z dataType="Float">0</Z>
+            </pos>
+            <posAbs dataType="Struct" type="Duality.Vector3">
+              <X dataType="Float">603.161255</X>
+              <Y dataType="Float">-400.721924</Y>
+              <Z dataType="Float">0</Z>
+            </posAbs>
+            <scale dataType="Float">1</scale>
+            <scaleAbs dataType="Float">1</scaleAbs>
+            <vel dataType="Struct" type="Duality.Vector3" />
+            <velAbs dataType="Struct" type="Duality.Vector3" />
+          </item>
+          <item dataType="Struct" type="Duality.Components.Physics.RigidBody" id="3173273987">
+            <active dataType="Bool">true</active>
+            <angularDamp dataType="Float">0.3</angularDamp>
+            <angularVel dataType="Float">0</angularVel>
+            <bodyType dataType="Enum" type="Duality.Components.Physics.BodyType" name="Dynamic" value="1" />
+            <colCat dataType="Enum" type="Duality.Components.Physics.CollisionCategory" name="Cat1, Cat2" value="3" />
+            <colFilter />
+            <colWith dataType="Enum" type="Duality.Components.Physics.CollisionCategory" name="All" value="2147483647" />
+            <continous dataType="Bool">false</continous>
+            <explicitInertia dataType="Float">0</explicitInertia>
+            <explicitMass dataType="Float">0</explicitMass>
+            <fixedAngle dataType="Bool">false</fixedAngle>
+            <gameobj dataType="ObjectRef">110497463</gameobj>
+            <ignoreGravity dataType="Bool">false</ignoreGravity>
+            <joints />
+            <linearDamp dataType="Float">0</linearDamp>
+            <linearVel dataType="Struct" type="Duality.Vector2" />
+            <revolutions dataType="Float">0</revolutions>
+            <shapes dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Components.Physics.ShapeInfo]]" id="606594995">
+              <_items dataType="Array" type="Duality.Components.Physics.ShapeInfo[]" id="450718246">
+                <item dataType="Struct" type="Duality.Components.Physics.CircleShapeInfo" id="988778752">
+                  <density dataType="Float">10</density>
+                  <friction dataType="Float">0.3</friction>
+                  <parent dataType="ObjectRef">3173273987</parent>
+                  <position dataType="Struct" type="Duality.Vector2" />
+                  <radius dataType="Float">40</radius>
+                  <restitution dataType="Float">0.3</restitution>
+                  <sensor dataType="Bool">false</sensor>
+                </item>
+                <item dataType="Struct" type="Duality.Components.Physics.CircleShapeInfo" id="2665724366">
+                  <density dataType="Float">0</density>
+                  <friction dataType="Float">0.3</friction>
+                  <parent dataType="ObjectRef">3173273987</parent>
+                  <position dataType="Struct" type="Duality.Vector2" />
+                  <radius dataType="Float">56.7450447</radius>
+                  <restitution dataType="Float">0.3</restitution>
+                  <sensor dataType="Bool">true</sensor>
+                </item>
+              </_items>
+              <_size dataType="Int">2</_size>
+              <_version dataType="Int">18</_version>
+            </shapes>
+          </item>
+          <item dataType="Struct" type="Battleroom.RangeSensor" id="2246305213">
+            <_x003C_ActiveCollisions_x003E_k__BackingField dataType="Int">0</_x003C_ActiveCollisions_x003E_k__BackingField>
+            <_x003C_SensorShape_x003E_k__BackingField dataType="ObjectRef">2665724366</_x003C_SensorShape_x003E_k__BackingField>
+            <active dataType="Bool">true</active>
+            <EnteredRange dataType="Delegate" type="System.EventHandler" id="3880483469" multi="true">
+              <method dataType="ObjectRef">3520568864</method>
+              <target dataType="Struct" type="Battleroom.SoldierMovement" id="1058647973">
+                <_x003C_CrawlDown_x003E_k__BackingField dataType="Bool">false</_x003C_CrawlDown_x003E_k__BackingField>
+                <_x003C_CrawlingSpeed_x003E_k__BackingField dataType="Float">4</_x003C_CrawlingSpeed_x003E_k__BackingField>
+                <_x003C_CrawlLeft_x003E_k__BackingField dataType="Bool">false</_x003C_CrawlLeft_x003E_k__BackingField>
+                <_x003C_CrawlRight_x003E_k__BackingField dataType="Bool">false</_x003C_CrawlRight_x003E_k__BackingField>
+                <_x003C_CrawlUp_x003E_k__BackingField dataType="Bool">false</_x003C_CrawlUp_x003E_k__BackingField>
+                <_x003C_FacingAngle_x003E_k__BackingField dataType="Float">0</_x003C_FacingAngle_x003E_k__BackingField>
+                <_x003C_FreeRotationSpeed_x003E_k__BackingField dataType="Float">0.01</_x003C_FreeRotationSpeed_x003E_k__BackingField>
+                <_x003C_GrippingRotationSpeed_x003E_k__BackingField dataType="Float">1</_x003C_GrippingRotationSpeed_x003E_k__BackingField>
+                <_x003C_JumpStrength_x003E_k__BackingField dataType="Float">2000</_x003C_JumpStrength_x003E_k__BackingField>
+                <active dataType="Bool">true</active>
+                <bottomLimit dataType="Float">0</bottomLimit>
+                <gameobj dataType="ObjectRef">110497463</gameobj>
+                <gripped />
+                <gripping dataType="Enum" type="Battleroom.GripState" name="NO_GRIP" value="2" />
+                <leftLimit dataType="Float">0</leftLimit>
+                <rightLimit dataType="Float">0</rightLimit>
+                <topLimit dataType="Float">0</topLimit>
+              </target>
+              <invocationList dataType="Array" type="System.Delegate[]" id="2482208038">
+                <item dataType="Delegate" type="System.EventHandler" id="3370253568" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="3381701276">
+                    <item dataType="ObjectRef">3370253568</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3175338446" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="4167872978">
+                    <item dataType="ObjectRef">3175338446</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="414719900" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="3503194296">
+                    <item dataType="ObjectRef">414719900</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3370361554" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="799436070">
+                    <item dataType="ObjectRef">3370361554</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1750156216" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="868226708">
+                    <item dataType="ObjectRef">1750156216</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3334968870" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="2916981866">
+                    <item dataType="ObjectRef">3334968870</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1659548052" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="565132144">
+                    <item dataType="ObjectRef">1659548052</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1587138922" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1810113790">
+                    <item dataType="ObjectRef">1587138922</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="168210544" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1635149068">
+                    <item dataType="ObjectRef">168210544</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2204972030" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="854407042">
+                    <item dataType="ObjectRef">2204972030</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2452377100" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="3688699176">
+                    <item dataType="ObjectRef">2452377100</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="56689282" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="2792953046">
+                    <item dataType="ObjectRef">56689282</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="4076541992" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1660388356">
+                    <item dataType="ObjectRef">4076541992</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="4142306262" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="784886554">
+                    <item dataType="ObjectRef">4142306262</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="840477956" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="583785184">
+                    <item dataType="ObjectRef">840477956</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="4289357850" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="2029398446">
+                    <item dataType="ObjectRef">4289357850</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="194910688" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1525135484">
+                    <item dataType="ObjectRef">194910688</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2842087086" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="3643269554">
+                    <item dataType="ObjectRef">2842087086</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1915454332" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="2752000408">
+                    <item dataType="ObjectRef">1915454332</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="695798450" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="2563399814">
+                    <item dataType="ObjectRef">695798450</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3564070040" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1918385268">
+                    <item dataType="ObjectRef">3564070040</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2173699974" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="3128816714">
+                    <item dataType="ObjectRef">2173699974</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2307259764" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="687017424">
+                    <item dataType="ObjectRef">2307259764</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3526357322" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="3821446110">
+                    <item dataType="ObjectRef">3526357322</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2041529040" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="3250400876">
+                    <item dataType="ObjectRef">2041529040</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="873768670" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="4265426146">
+                    <item dataType="ObjectRef">873768670</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="290228588" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="3867078280">
+                    <item dataType="ObjectRef">290228588</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3467502050" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="4093319350">
+                    <item dataType="ObjectRef">3467502050</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="792404872" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="2103973604">
+                    <item dataType="ObjectRef">792404872</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3165716918" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1111926266">
+                    <item dataType="ObjectRef">3165716918</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3431959524" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1228459456">
+                    <item dataType="ObjectRef">3431959524</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2326855418" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="755117838">
+                    <item dataType="ObjectRef">2326855418</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1625381056" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="2113934428">
+                    <item dataType="ObjectRef">1625381056</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3292507662" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1448566802">
+                    <item dataType="ObjectRef">3292507662</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3336085340" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="999193720">
+                    <item dataType="ObjectRef">3336085340</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2664321298" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="2196817254">
+                    <item dataType="ObjectRef">2664321298</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2749755768" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1026821972">
+                    <item dataType="ObjectRef">2749755768</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2591881830" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1074869162">
+                    <item dataType="ObjectRef">2591881830</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="234881620" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="831216176">
+                    <item dataType="ObjectRef">234881620</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="4012848810" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="3451380030">
+                    <item dataType="ObjectRef">4012848810</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2051716400" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1024772300">
+                    <item dataType="ObjectRef">2051716400</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="511749694" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1356092354">
+                    <item dataType="ObjectRef">511749694</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2361217996" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="2866118632">
+                    <item dataType="ObjectRef">2361217996</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="421887170" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="3028967958">
+                    <item dataType="ObjectRef">421887170</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1652840168" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1753267908">
+                    <item dataType="ObjectRef">1652840168</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1270152470" multi="true">
+                  <method dataType="ObjectRef">3520568864</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1543284826">
+                    <item dataType="ObjectRef">1270152470</item>
+                  </invocationList>
+                </item>
+              </invocationList>
+            </EnteredRange>
+            <gameobj dataType="ObjectRef">110497463</gameobj>
+            <LeftRange dataType="Delegate" type="System.EventHandler" id="1701426104" multi="true">
+              <method dataType="ObjectRef">256412964</method>
+              <target dataType="ObjectRef">1058647973</target>
+              <invocationList dataType="Array" type="System.Delegate[]" id="3172891623">
+                <item dataType="Delegate" type="System.EventHandler" id="758541646" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="422927056">
+                    <item dataType="ObjectRef">758541646</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3516290634" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1721521676">
+                    <item dataType="ObjectRef">3516290634</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2506630398" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="2709506720">
+                    <item dataType="ObjectRef">2506630398</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1409893210" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="3183988476">
+                    <item dataType="ObjectRef">1409893210</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1329475374" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1851092464">
+                    <item dataType="ObjectRef">1329475374</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="714489322" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1269841004">
+                    <item dataType="ObjectRef">714489322</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3593087198" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="865580992">
+                    <item dataType="ObjectRef">3593087198</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1158687994" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="3555259228">
+                    <item dataType="ObjectRef">1158687994</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2164565262" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="679212944">
+                    <item dataType="ObjectRef">2164565262</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="455756170" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="642174540">
+                    <item dataType="ObjectRef">455756170</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1782609342" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1429836896">
+                    <item dataType="ObjectRef">1782609342</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="679295898" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="2269532988">
+                    <item dataType="ObjectRef">679295898</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3187357934" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1574069168">
+                    <item dataType="ObjectRef">3187357934</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3886446122" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="2288412076">
+                    <item dataType="ObjectRef">3886446122</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1584026270" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="3662982784">
+                    <item dataType="ObjectRef">1584026270</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2183449146" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="4107445404">
+                    <item dataType="ObjectRef">2183449146</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3454564302" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1990535504">
+                    <item dataType="ObjectRef">3454564302</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1979854538" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="3466931852">
+                    <item dataType="ObjectRef">1979854538</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1342911358" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="2006598944">
+                    <item dataType="ObjectRef">1342911358</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="603928538" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="161260412">
+                    <item dataType="ObjectRef">603928538</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3211297198" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="3452156016">
+                    <item dataType="ObjectRef">3211297198</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="553977450" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1395860716">
+                    <item dataType="ObjectRef">553977450</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1445816158" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="935367232">
+                    <item dataType="ObjectRef">1445816158</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1087037818" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="2408845276">
+                    <item dataType="ObjectRef">1087037818</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2136434574" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1110829584">
+                    <item dataType="ObjectRef">2136434574</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1563138570" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="3368039116">
+                    <item dataType="ObjectRef">1563138570</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3449265214" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="48722656">
+                    <item dataType="ObjectRef">3449265214</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2594005018" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="2346309564">
+                    <item dataType="ObjectRef">2594005018</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3950568302" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="3396112944">
+                    <item dataType="ObjectRef">3950568302</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1818898090" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="409142828">
+                    <item dataType="ObjectRef">1818898090</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="4157800734" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="34488576">
+                    <item dataType="ObjectRef">4157800734</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2757637818" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="906468636">
+                    <item dataType="ObjectRef">2757637818</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1121772110" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="2641444816">
+                    <item dataType="ObjectRef">1121772110</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1560252234" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1243305740">
+                    <item dataType="ObjectRef">1560252234</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2940701182" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="2277274528">
+                    <item dataType="ObjectRef">2940701182</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3572231258" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="990358524">
+                    <item dataType="ObjectRef">3572231258</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="3344923694" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="4246032112">
+                    <item dataType="ObjectRef">3344923694</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2829444842" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="787582316">
+                    <item dataType="ObjectRef">2829444842</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="404372958" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="574377152">
+                    <item dataType="ObjectRef">404372958</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1147016698" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="3613020252">
+                    <item dataType="ObjectRef">1147016698</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1655470606" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="742672528">
+                    <item dataType="ObjectRef">1655470606</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="4293214858" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="505887564">
+                    <item dataType="ObjectRef">4293214858</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="2355788478" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="225262944">
+                    <item dataType="ObjectRef">2355788478</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1816839322" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="2828909628">
+                    <item dataType="ObjectRef">1816839322</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="430671342" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="1399001264">
+                    <item dataType="ObjectRef">430671342</item>
+                  </invocationList>
+                </item>
+                <item dataType="Delegate" type="System.EventHandler" id="1863497514" multi="true">
+                  <method dataType="ObjectRef">256412964</method>
+                  <target dataType="ObjectRef">1058647973</target>
+                  <invocationList dataType="Array" type="System.Delegate[]" id="638815916">
+                    <item dataType="ObjectRef">1863497514</item>
+                  </invocationList>
+                </item>
+              </invocationList>
+            </LeftRange>
+            <range_ dataType="Float">20</range_>
+            <shapesWithinRange dataType="Struct" type="System.Collections.Generic.HashSet`1[[Duality.Components.Physics.ShapeInfo]]" id="3919121767">
+              <m_buckets />
+              <m_comparer dataType="ObjectRef">2396661568</m_comparer>
+              <m_count dataType="Int">0</m_count>
+              <m_freeList dataType="Int">-1</m_freeList>
+              <m_lastIndex dataType="Int">0</m_lastIndex>
+              <m_siInfo />
+              <m_slots />
+              <m_version dataType="Int">0</m_version>
+            </shapesWithinRange>
+            <withinRange_ dataType="Bool">false</withinRange_>
+          </item>
+          <item dataType="ObjectRef">1058647973</item>
+          <item dataType="Struct" type="Battleroom.BeamGun" id="1513478501">
+            <_x003C_IsFiring_x003E_k__BackingField dataType="Bool">false</_x003C_IsFiring_x003E_k__BackingField>
+            <_x003C_Range_x003E_k__BackingField dataType="Float">500</_x003C_Range_x003E_k__BackingField>
+            <active dataType="Bool">true</active>
+            <beamEnd dataType="Struct" type="Duality.Vector2" />
+            <gameobj dataType="ObjectRef">110497463</gameobj>
+            <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group0" value="1" />
+          </item>
+          <item dataType="Struct" type="Battleroom.Soldier" id="3435046318">
+            <_x003C_BeamTime_x003E_k__BackingField dataType="Float">0</_x003C_BeamTime_x003E_k__BackingField>
+            <_x003C_MaxBeamTime_x003E_k__BackingField dataType="Float">0</_x003C_MaxBeamTime_x003E_k__BackingField>
+            <_x003C_Shape_x003E_k__BackingField dataType="ObjectRef">988778752</_x003C_Shape_x003E_k__BackingField>
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">110497463</gameobj>
+            <radius dataType="Float">40</radius>
+            <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group0" value="1" />
+          </item>
+          <item dataType="Struct" type="Duality.Components.Renderers.RigidBodyRenderer" id="709190653">
+            <active dataType="Bool">true</active>
+            <areaMaterial dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
+              <contentPath dataType="String">Default:Material:Checkerboard</contentPath>
+            </areaMaterial>
+            <colorTint dataType="Struct" type="Duality.Drawing.ColorRgba">
+              <A dataType="Byte">255</A>
+              <B dataType="Byte">255</B>
+              <G dataType="Byte">255</G>
+              <R dataType="Byte">255</R>
+            </colorTint>
+            <customAreaMaterial />
+            <customOutlineMaterial />
+            <fillHollowShapes dataType="Bool">false</fillHollowShapes>
+            <gameobj dataType="ObjectRef">110497463</gameobj>
+            <offset dataType="Int">0</offset>
+            <outlineMaterial dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Material]]">
+              <contentPath dataType="String">Default:Material:SolidWhite</contentPath>
+            </outlineMaterial>
+            <outlineWidth dataType="Float">3</outlineWidth>
+            <visibilityGroup dataType="Enum" type="Duality.Drawing.VisibilityFlag" name="Group0" value="1" />
+            <wrapTexture dataType="Bool">true</wrapTexture>
+          </item>
+        </_items>
+        <_size dataType="Int">7</_size>
+        <_version dataType="Int">9</_version>
+      </compList>
+      <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="130018504" surrogate="true">
+        <header />
+        <body>
+          <keys dataType="Array" type="System.Object[]" id="2507754847">
+            <item dataType="ObjectRef">2758959654</item>
+            <item dataType="ObjectRef">1880110778</item>
+            <item dataType="ObjectRef">3217915174</item>
+            <item dataType="ObjectRef">2070054842</item>
+            <item dataType="ObjectRef">1437909030</item>
+            <item dataType="ObjectRef">1255927994</item>
+            <item dataType="ObjectRef">717885882</item>
+          </keys>
+          <values dataType="Array" type="System.Object[]" id="356872992">
+            <item dataType="ObjectRef">2470812395</item>
+            <item dataType="ObjectRef">3173273987</item>
+            <item dataType="ObjectRef">2246305213</item>
+            <item dataType="ObjectRef">1058647973</item>
+            <item dataType="ObjectRef">1513478501</item>
+            <item dataType="ObjectRef">3435046318</item>
+            <item dataType="ObjectRef">709190653</item>
+          </values>
+        </body>
+      </compMap>
+      <compTransform dataType="ObjectRef">2470812395</compTransform>
+      <identifier dataType="Struct" type="System.Guid" surrogate="true">
+        <header>
+          <data dataType="Array" type="System.Byte[]" id="1303834317">oE6TVQUyuUCZT2HpBuwMrg==</data>
+        </header>
+        <body />
+      </identifier>
+      <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
+      <name dataType="String">Player</name>
+      <parent />
+      <prefabLink dataType="Struct" type="Duality.Resources.PrefabLink" id="2388162879">
+        <changes />
+        <obj dataType="ObjectRef">110497463</obj>
+        <prefab dataType="Struct" type="Duality.ContentRef`1[[Duality.Resources.Prefab]]">
+          <contentPath dataType="String">Data\Enemy.Prefab.res</contentPath>
+        </prefab>
+      </prefabLink>
     </item>
   </serializeObj>
   <visibilityStrategy dataType="Struct" type="Duality.Components.DefaultRendererVisibilityStrategy" id="2035693768" />
