@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Graphics\UserInterface.cs" />
+    <Compile Include="Networking\Multiplayer.cs" />
     <Compile Include="Room\Boundary.cs" />
     <Compile Include="Soldier\BeamGun.cs" />
     <Compile Include="Tool\CanHaveTool.cs" />
