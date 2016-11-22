@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Duality.Drawing;
+using Battleroom.Tooling.Cmd;
 
 namespace Battleroom
 {
@@ -76,7 +77,15 @@ namespace Battleroom
                 Body.CollidesWith |= CollisionCatagories.Room;
                 Body.CollisionCategory |= CollisionCatagories.Player;
                 UpdateShape();
+
+                CmdOverlay.Commands.Add("fire", IsFiringCommand);
             }
+        }
+
+        public void IsFiringCommand(string[] args)
+        {
+            BeamGun gun = GameObj.GetComponent<BeamGun>();
+            gun.IsFiring = args[0] == "true";
         }
 
         public void OnShutdown(ShutdownContext context)

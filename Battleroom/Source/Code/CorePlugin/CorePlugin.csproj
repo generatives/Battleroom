@@ -60,6 +60,7 @@
     <Compile Include="Graphics\MouseRenderer.cs" />
     <Compile Include="Room\Boundary.cs" />
     <Compile Include="Soldier\BeamGun.cs" />
+    <Compile Include="Tooling\Cmd\CmdOverlay.cs" />
     <Compile Include="Tool\CanHaveTool.cs" />
     <Compile Include="Utilities\CameraController.cs" />
     <Compile Include="CollisionCatagories.cs" />

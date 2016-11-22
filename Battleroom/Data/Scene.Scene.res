@@ -137,7 +137,7 @@
                         </item>
                       </_items>
                       <_size dataType="Int">2</_size>
-                      <_version dataType="Int">236</_version>
+                      <_version dataType="Int">248</_version>
                     </shapes>
                   </item>
                   <item dataType="Struct" type="Battleroom.RangeSensor" id="1058522610">
@@ -415,6 +415,20 @@
                             <item dataType="ObjectRef">4197228530</item>
                           </invocationList>
                         </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="714263114" multi="true">
+                          <method dataType="ObjectRef">3520568864</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="2557449704">
+                            <item dataType="ObjectRef">714263114</item>
+                          </invocationList>
+                        </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="1467616962" multi="true">
+                          <method dataType="ObjectRef">3520568864</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="2265056800">
+                            <item dataType="ObjectRef">1467616962</item>
+                          </invocationList>
+                        </item>
                       </invocationList>
                     </EnteredRange>
                     <gameobj dataType="ObjectRef">3217682156</gameobj>
@@ -653,6 +667,20 @@
                             <item dataType="ObjectRef">843432302</item>
                           </invocationList>
                         </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="385351882" multi="true">
+                          <method dataType="ObjectRef">256412964</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="3668415212">
+                            <item dataType="ObjectRef">385351882</item>
+                          </invocationList>
+                        </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="1308084574" multi="true">
+                          <method dataType="ObjectRef">256412964</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="1309150112">
+                            <item dataType="ObjectRef">1308084574</item>
+                          </invocationList>
+                        </item>
                       </invocationList>
                     </LeftRange>
                     <range_ dataType="Float">20</range_>
@@ -864,7 +892,7 @@
                 </item>
               </_items>
               <_size dataType="Int">1</_size>
-              <_version dataType="Int">127</_version>
+              <_version dataType="Int">131</_version>
             </shapes>
           </item>
           <item dataType="Struct" type="Battleroom.Utilities.RectangularBody" id="2167613126">
@@ -1014,7 +1042,7 @@
                 </item>
               </_items>
               <_size dataType="Int">1</_size>
-              <_version dataType="Int">77</_version>
+              <_version dataType="Int">81</_version>
             </shapes>
           </item>
           <item dataType="Struct" type="Battleroom.Utilities.RectangularBody" id="282802224">
@@ -1095,18 +1123,26 @@
             <active dataType="Bool">true</active>
             <gameobj dataType="ObjectRef">3372874901</gameobj>
           </item>
+          <item dataType="Struct" type="Battleroom.Tooling.Cmd.CmdOverlay" id="2070241772">
+            <_x003C_CurrentText_x003E_k__BackingField />
+            <_x003C_Enabled_x003E_k__BackingField dataType="Bool">false</_x003C_Enabled_x003E_k__BackingField>
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">3372874901</gameobj>
+          </item>
         </_items>
-        <_size dataType="Int">1</_size>
-        <_version dataType="Int">1</_version>
+        <_size dataType="Int">2</_size>
+        <_version dataType="Int">4</_version>
       </compList>
       <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="4031371136" surrogate="true">
         <header />
         <body>
           <keys dataType="Array" type="System.Object[]" id="1310036429">
             <item dataType="Type" id="595976742" value="Battleroom.Graphics.MouseRenderer" />
+            <item dataType="Type" id="1450587834" value="Battleroom.Tooling.Cmd.CmdOverlay" />
           </keys>
           <values dataType="Array" type="System.Object[]" id="3102828728">
             <item dataType="ObjectRef">473966025</item>
+            <item dataType="ObjectRef">2070241772</item>
           </values>
         </body>
       </compMap>
