@@ -69,7 +69,7 @@ namespace Battleroom.Tooling.Cmd
                 if (!String.IsNullOrEmpty(inputText))
                 {
                     char inputChar = inputText[0];
-                    if (char.IsLetterOrDigit(inputChar) || inputChar == ' ')
+                    if (char.IsLetterOrDigit(inputChar) || inputChar == ' ' || char.IsPunctuation(inputChar))
                     {
                         CurrentText += inputText;
                     }
