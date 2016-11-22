@@ -78,14 +78,15 @@ namespace Battleroom
                 Body.CollisionCategory |= CollisionCatagories.Player;
                 UpdateShape();
 
-                CmdOverlay.Commands.Add("fire", IsFiringCommand);
+                CmdOverlay.AddCommands(this);
             }
         }
 
-        public void IsFiringCommand(string[] args)
+        [CmdOverlayCommand(Name = "fire")]
+        public void IsFiringCommand(bool val, string num, float fl)
         {
             BeamGun gun = GameObj.GetComponent<BeamGun>();
-            gun.IsFiring = args[0] == "true";
+            gun.IsFiring = val;
         }
 
         public void OnShutdown(ShutdownContext context)

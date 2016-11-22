@@ -1,4 +1,5 @@
-﻿using Duality;
+﻿using Battleroom.Tooling.Cmd;
+using Duality;
 using Duality.Components;
 using Duality.Resources;
 using System;
@@ -59,78 +60,84 @@ namespace Battleroom
 
         private void Keyboard_KeyUp(object sender, Duality.Input.KeyboardKeyEventArgs e)
         {
-            switch (e.Key)
+            if(!CmdOverlay.Enabled)
             {
-                case Duality.Input.Key.A:
-                    Movement.CrawlLeft = false;
-                    break;
-                case Duality.Input.Key.S:
-                    Movement.CrawlDown = false;
-                    break;
-                case Duality.Input.Key.D:
-                    Movement.CrawlRight = false;
-                    break;
-                case Duality.Input.Key.W:
-                    Movement.CrawlUp = false;
-                    break;
-                case Duality.Input.Key.Space:
-                    if (Movement.Gripping == GripState.SHOULD_GRIP)
-                    {
-                        Movement.Gripping = GripState.NO_GRIP;
-                    }
-                    else if (Movement.Gripping == GripState.GRIPPING)
-                    {
-                        if (!DualityApp.Keyboard.KeyPressed(Duality.Input.Key.ShiftLeft))
+                switch (e.Key)
+                {
+                    case Duality.Input.Key.A:
+                        Movement.CrawlLeft = false;
+                        break;
+                    case Duality.Input.Key.S:
+                        Movement.CrawlDown = false;
+                        break;
+                    case Duality.Input.Key.D:
+                        Movement.CrawlRight = false;
+                        break;
+                    case Duality.Input.Key.W:
+                        Movement.CrawlUp = false;
+                        break;
+                    case Duality.Input.Key.Space:
+                        if (Movement.Gripping == GripState.SHOULD_GRIP)
                         {
-                            Movement.Jump(MouseRelativeToTransform().Angle);
+                            Movement.Gripping = GripState.NO_GRIP;
                         }
-                    }
-                    break;
-                case Duality.Input.Key.ShiftLeft:
-                    if (Movement.Gripping == GripState.NO_GRIP)
-                    {
-                        Movement.Gripping = GripState.SHOULD_GRIP;
-                    }
-                    else if (Movement.Gripping == GripState.SHOULD_GRIP)
-                    {
-                        Movement.Gripping = GripState.NO_GRIP;
-                    }
-                    break;
-                case Duality.Input.Key.Escape:
-                    if (Time.TimeMult > 0)
-                    {
-                        Time.Freeze();
-                    }
-                    else
-                    {
-                        Time.Resume();
-                    }
-                    break;
+                        else if (Movement.Gripping == GripState.GRIPPING)
+                        {
+                            if (!DualityApp.Keyboard.KeyPressed(Duality.Input.Key.ShiftLeft))
+                            {
+                                Movement.Jump(MouseRelativeToTransform().Angle);
+                            }
+                        }
+                        break;
+                    case Duality.Input.Key.ShiftLeft:
+                        if (Movement.Gripping == GripState.NO_GRIP)
+                        {
+                            Movement.Gripping = GripState.SHOULD_GRIP;
+                        }
+                        else if (Movement.Gripping == GripState.SHOULD_GRIP)
+                        {
+                            Movement.Gripping = GripState.NO_GRIP;
+                        }
+                        break;
+                    case Duality.Input.Key.Escape:
+                        if (Time.TimeMult > 0)
+                        {
+                            Time.Freeze();
+                        }
+                        else
+                        {
+                            Time.Resume();
+                        }
+                        break;
+                }
             }
         }
 
         private void Keyboard_KeyDown(object sender, Duality.Input.KeyboardKeyEventArgs e)
         {
-            switch (e.Key)
+            if (!CmdOverlay.Enabled)
             {
-                case Duality.Input.Key.A:
-                    Movement.CrawlLeft = true;
-                    break;
-                case Duality.Input.Key.S:
-                    Movement.CrawlDown = true;
-                    break;
-                case Duality.Input.Key.D:
-                    Movement.CrawlRight = true;
-                    break;
-                case Duality.Input.Key.W:
-                    Movement.CrawlUp = true;
-                    break;
-                case Duality.Input.Key.Space:
-                    if(Movement.Gripping == GripState.NO_GRIP)
-                    {
-                        Movement.Gripping = GripState.SHOULD_GRIP;
-                    }
-                    break;
+                switch (e.Key)
+                {
+                    case Duality.Input.Key.A:
+                        Movement.CrawlLeft = true;
+                        break;
+                    case Duality.Input.Key.S:
+                        Movement.CrawlDown = true;
+                        break;
+                    case Duality.Input.Key.D:
+                        Movement.CrawlRight = true;
+                        break;
+                    case Duality.Input.Key.W:
+                        Movement.CrawlUp = true;
+                        break;
+                    case Duality.Input.Key.Space:
+                        if (Movement.Gripping == GripState.NO_GRIP)
+                        {
+                            Movement.Gripping = GripState.SHOULD_GRIP;
+                        }
+                        break;
+                }
             }
         }
 

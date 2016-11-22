@@ -61,6 +61,7 @@ namespace Battleroom
             set
             {
                 gripping = value;
+                UpdateGrip();
             }
         }
 
@@ -117,33 +118,36 @@ namespace Battleroom
         {
             if (Gripping == GripState.SHOULD_GRIP && Range.WithinRange)
             {
-                gripped = Range.ShapesWithinRange
-                    .FirstOrDefault(s => s.Parent.GameObj.GetComponent<Grippable>() != null)
-                    .Parent.GameObj.GetComponent<Grippable>();
-                if(gripped != null)
+                var shapeInRange = Range.ShapesWithinRange
+                    .FirstOrDefault(s => s.Parent.GameObj.GetComponent<Grippable>() != null);
+                if (shapeInRange != null)
                 {
-                    Gripping = GripState.GRIPPING;
-                    Body.LinearVelocity = new Vector2();
-                    Body.AngularVelocity = 0;
-                    //Body.BodyType = BodyType.Kinematic;
-
-                    Rect grabbedShape = gripped.RectangularBody.LoopShape.AABB;
-                    Rect soldierShape = Soldier.Shape.AABB;
-                    int side = gripped.FindSide(GameObj.Transform, Soldier.Shape);
-
-                    if ((side & Grippable.IN) > 0)
+                    gripped = shapeInRange.Parent.GameObj.GetComponent<Grippable>();
+                    if (gripped != null)
                     {
-                        topLimit = gripped.GameObj.Transform.Pos.Y - grabbedShape.H / 2 + soldierShape.H / 2;
-                        bottomLimit = gripped.GameObj.Transform.Pos.Y + grabbedShape.H / 2 - soldierShape.H / 2;
-                        leftLimit = gripped.GameObj.Transform.Pos.X - grabbedShape.W / 2 + soldierShape.W / 2;
-                        rightLimit = gripped.GameObj.Transform.Pos.X + grabbedShape.W / 2 - soldierShape.W / 2;
-                    }
-                    else if ((side & Grippable.OUT) > 0)
-                    {
-                        topLimit = gripped.GameObj.Transform.Pos.Y - grabbedShape.H / 2 - soldierShape.H / 2;
-                        bottomLimit = gripped.GameObj.Transform.Pos.Y + grabbedShape.H / 2 + soldierShape.H / 2;
-                        leftLimit = gripped.GameObj.Transform.Pos.X - grabbedShape.W / 2 - soldierShape.W / 2;
-                        rightLimit = gripped.GameObj.Transform.Pos.X + grabbedShape.W / 2 + soldierShape.W / 2;
+                        Gripping = GripState.GRIPPING;
+                        Body.LinearVelocity = new Vector2();
+                        Body.AngularVelocity = 0;
+                        //Body.BodyType = BodyType.Kinematic;
+
+                        Rect grabbedShape = gripped.RectangularBody.LoopShape.AABB;
+                        Rect soldierShape = Soldier.Shape.AABB;
+                        int side = gripped.FindSide(GameObj.Transform, Soldier.Shape);
+
+                        if ((side & Grippable.IN) > 0)
+                        {
+                            topLimit = gripped.GameObj.Transform.Pos.Y - grabbedShape.H / 2 + soldierShape.H / 2;
+                            bottomLimit = gripped.GameObj.Transform.Pos.Y + grabbedShape.H / 2 - soldierShape.H / 2;
+                            leftLimit = gripped.GameObj.Transform.Pos.X - grabbedShape.W / 2 + soldierShape.W / 2;
+                            rightLimit = gripped.GameObj.Transform.Pos.X + grabbedShape.W / 2 - soldierShape.W / 2;
+                        }
+                        else if ((side & Grippable.OUT) > 0)
+                        {
+                            topLimit = gripped.GameObj.Transform.Pos.Y - grabbedShape.H / 2 - soldierShape.H / 2;
+                            bottomLimit = gripped.GameObj.Transform.Pos.Y + grabbedShape.H / 2 + soldierShape.H / 2;
+                            leftLimit = gripped.GameObj.Transform.Pos.X - grabbedShape.W / 2 - soldierShape.W / 2;
+                            rightLimit = gripped.GameObj.Transform.Pos.X + grabbedShape.W / 2 + soldierShape.W / 2;
+                        }
                     }
                 }
             }
@@ -155,7 +159,7 @@ namespace Battleroom
 
         public void OnUpdate()
         {
-            VisualLog.Default.DrawText(10, 70, "" + Body.LinearVelocity);
+            //VisualLog.Default.DrawText(10, 70, "" + Body.LinearVelocity);
             if (Gripping == GripState.GRIPPING)
             {
                 bool shouldMove = false;
@@ -214,7 +218,7 @@ namespace Battleroom
                 angle = (float)(2 * Math.PI) + angle;
             }
             float turnBy = angle * (Gripping == GripState.GRIPPING ? GrippingRotationSpeed : FreeRotationSpeed) * Time.TimeMult;
-            VisualLog.Default.DrawText(10, 40, "" + turnBy);
+            //VisualLog.Default.DrawText(10, 40, "" + turnBy);
             GameObj.Transform.TurnBy(turnBy);
         }
     }
