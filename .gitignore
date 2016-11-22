@@ -4,3 +4,6 @@ Battleroom/Source/Code/CorePlugin/obj
 Battleroom/Source/Code/EditorPlugin/bin
 Battleroom/Source/Code/EditorPlugin/obj
 !Battleroom/*.*
+!Battleroom/Plugins/*.pdb
+!Battleroom/Plugins/*.dll
+!Battleroom/Plugins/*.xml
