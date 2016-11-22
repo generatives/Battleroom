@@ -213,6 +213,7 @@ namespace Battleroom
                 angle = (float)(2 * Math.PI) + angle;
             }
             float turnBy = angle * (Gripping == GripState.GRIPPING ? GrippingRotationSpeed : FreeRotationSpeed);
+            VisualLog.Default.DrawText(10, 40, "" + turnBy);
             GameObj.Transform.TurnBy(turnBy);
         }
     }
