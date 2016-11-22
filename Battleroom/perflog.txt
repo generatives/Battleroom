@@ -1,0 +1,50 @@
+
+--------------------[ TimeCounter ]---------------
+
+Name                          Avg. Value    Min. Value    Max. Value         Samples 
+Duality\Frame:                     25.60          0.00        155.36             139 
+  Update:                           0.64          0.00         60.08             139 
+    Physics:                        0.19          0.00         22.58             139 
+      Contacts:                     0.01          0.00          0.67             139 
+      Controller:                   0.00          0.00          0.13             139 
+      Continous:                    0.03          0.00          4.12             139 
+      AddRemove:                    0.00          0.00          0.01             139 
+      Solve:                        0.14          0.00         16.58             139 
+    Scene:                          0.17          0.00         12.72             139 
+      All Components:               0.14          0.00          9.48             139 
+      Transform:                    0.01          0.00          0.52             138 
+      CameraController:             0.02          0.00          2.21             138 
+      RigidBody:                    0.03          0.00          3.80             138 
+      BeamGun:                      0.01          0.00          0.77             138 
+      SoldierMovement:              0.01          0.00          1.38             138 
+      Soldier:                      0.00          0.00          0.26             138 
+    Audio:                          0.03          0.00          2.23             139 
+  Render:                          24.83          0.00         91.30             139 
+    SwapBuffers:                   23.87          0.00         25.24             139 
+    QueryVisibleRenderers:          0.05          0.00          4.71             139 
+    CollectDrawcalls:               0.30          0.00         15.11             139 
+      Boundary:                     0.11          0.01         13.00             138 
+      Obstacle:                     0.01          0.00          1.48             138 
+      BeamGun:                      0.01          0.00          0.60             137 
+      Soldier:                      0.07          0.01          7.10             134 
+      RigidBodyRenderer:            0.10          0.02          7.97             134 
+    OptimizeDrawcalls:              0.01          0.00          0.80             139 
+    ProcessDrawcalls:               0.35          0.00         27.88             139 
+    PostProcessing:                 0.00          0.00          0.00               1 
+  Log:                              7.70          7.70          7.70               1 
+Duality\VisualPicking:              0.00          0.00          0.00               1 
+Cameras\Camera:                     0.97          0.13         73.87             138 
+
+--------------------[ StatCounter ]---------------
+
+Name                                         Avg. Value    Min. Value    Max. Value         Samples 
+Duality\Stats\Audio\NumPlaying2D:                     0             0             0             139 
+Duality\Stats\Audio\NumPlaying3D:                     0             0             0             139 
+Duality\Stats\Render\NumDrawcalls:                    9             0             9             139 
+Duality\Stats\Render\NumRawBatches:                   8             0             8             139 
+Duality\Stats\Render\NumMergedBatches:                8             0             8             139 
+Duality\Stats\Render\NumOptimizedBatches:             8             0             8             139 
+Duality\Stats\Memory\TotalUsage:                  11876          9665         12639             139 
+Duality\Stats\Memory\GarbageCollect0:                 4             -             -               - 
+Duality\Stats\Memory\GarbageCollect1:                 3             -             -               - 
+Duality\Stats\Memory\GarbageCollect2:                 2             -             -               - 

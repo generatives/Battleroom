@@ -1,0 +1,51 @@
+
+--------------------[ TimeCounter ]---------------
+
+Name                          Avg. Value    Min. Value    Max. Value         Samples 
+Duality\Frame:                      2.76          0.00       1132.45           42661 
+  Update:                           0.06          0.00         35.80           42661 
+    Physics:                        0.01          0.00         21.52           36658 
+      Contacts:                     0.00          0.00         11.56           36658 
+      Controller:                   0.00          0.00          0.03           36658 
+      Continous:                    0.00          0.00          7.60           36658 
+      AddRemove:                    0.00          0.00          0.03           36658 
+      Solve:                        0.01          0.00         15.55           36658 
+    Scene:                          0.02          0.00          6.71           42661 
+      All Components:               0.02          0.00          6.71           42661 
+      Transform:                    0.01          0.00          1.11           42403 
+      RigidBody:                    0.00          0.00          6.43           42403 
+      CameraController:             0.00          0.00          1.57           36657 
+      BeamGun:                      0.00          0.00          5.71           36657 
+      SoldierMovement:              0.00          0.00          1.28           36657 
+      Soldier:                      0.00          0.00          0.26           36657 
+    Audio:                          0.00          0.00          1.67           42661 
+  Render:                           0.42          0.04         77.08           38560 
+    SwapBuffers:                    0.22          0.00         14.13           38508 
+    QueryVisibleRenderers:          0.01          0.00          6.39           38508 
+    CollectDrawcalls:               0.07          0.00         40.32           38508 
+      Boundary:                     0.01          0.00         31.42           38467 
+      BeamGun:                      0.00          0.00          0.11           38467 
+      Obstacle:                     0.00          0.00          0.37           24632 
+      RigidBodyRenderer:            0.04          0.02          7.55           38360 
+      Soldier:                      0.01          0.00          3.95           38337 
+    OptimizeDrawcalls:              0.00          0.00          0.76           38508 
+    ProcessDrawcalls:               0.09          0.00         14.15           38508 
+    PostProcessing:                 0.00          0.00          0.00               1 
+  Log:                             10.00          0.02         29.88               3 
+Duality\VisualPicking:              2.60          0.86        382.01            1412 
+Cameras\CamView Camera 0:           0.51          0.11         77.09            1848 
+Cameras\Camera:                     0.18          0.04          2.04           36660 
+
+--------------------[ StatCounter ]---------------
+
+Name                                         Avg. Value    Min. Value    Max. Value         Samples 
+Duality\Stats\Audio\NumPlaying2D:                     0             0             0           42661 
+Duality\Stats\Audio\NumPlaying3D:                     0             0             0           42661 
+Duality\Stats\Render\NumDrawcalls:                    9             0            36           38508 
+Duality\Stats\Render\NumRawBatches:                   8             0            31           38508 
+Duality\Stats\Render\NumMergedBatches:                8             0            31           38508 
+Duality\Stats\Render\NumOptimizedBatches:             8             0            31           38508 
+Duality\Stats\Memory\TotalUsage:                  14373          9828         17904           42661 
+Duality\Stats\Memory\GarbageCollect0:               177             -             -               - 
+Duality\Stats\Memory\GarbageCollect1:                19             -             -               - 
+Duality\Stats\Memory\GarbageCollect2:                 6             -             -               - 
