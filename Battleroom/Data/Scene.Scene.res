@@ -137,7 +137,7 @@
                         </item>
                       </_items>
                       <_size dataType="Int">2</_size>
-                      <_version dataType="Int">260</_version>
+                      <_version dataType="Int">296</_version>
                     </shapes>
                   </item>
                   <item dataType="Struct" type="Battleroom.RangeSensor" id="1058522610">
@@ -443,6 +443,48 @@
                             <item dataType="ObjectRef">2229594386</item>
                           </invocationList>
                         </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="817398890" multi="true">
+                          <method dataType="ObjectRef">3520568864</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="4259205384">
+                            <item dataType="ObjectRef">817398890</item>
+                          </invocationList>
+                        </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="3417981538" multi="true">
+                          <method dataType="ObjectRef">3520568864</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="3712285632">
+                            <item dataType="ObjectRef">3417981538</item>
+                          </invocationList>
+                        </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="1930952954" multi="true">
+                          <method dataType="ObjectRef">3520568864</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="386872728">
+                            <item dataType="ObjectRef">1930952954</item>
+                          </invocationList>
+                        </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="648724146" multi="true">
+                          <method dataType="ObjectRef">3520568864</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="3280075408">
+                            <item dataType="ObjectRef">648724146</item>
+                          </invocationList>
+                        </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="1639684234" multi="true">
+                          <method dataType="ObjectRef">3520568864</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="3465078824">
+                            <item dataType="ObjectRef">1639684234</item>
+                          </invocationList>
+                        </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="760503682" multi="true">
+                          <method dataType="ObjectRef">3520568864</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="3684716000">
+                            <item dataType="ObjectRef">760503682</item>
+                          </invocationList>
+                        </item>
                       </invocationList>
                     </EnteredRange>
                     <gameobj dataType="ObjectRef">3217682156</gameobj>
@@ -709,6 +751,48 @@
                             <item dataType="ObjectRef">491963662</item>
                           </invocationList>
                         </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="351214186" multi="true">
+                          <method dataType="ObjectRef">256412964</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="824793740">
+                            <item dataType="ObjectRef">351214186</item>
+                          </invocationList>
+                        </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="4007423870" multi="true">
+                          <method dataType="ObjectRef">256412964</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="3740848832">
+                            <item dataType="ObjectRef">4007423870</item>
+                          </invocationList>
+                        </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="1108998138" multi="true">
+                          <method dataType="ObjectRef">256412964</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="2055930620">
+                            <item dataType="ObjectRef">1108998138</item>
+                          </invocationList>
+                        </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="457102126" multi="true">
+                          <method dataType="ObjectRef">256412964</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="2998642192">
+                            <item dataType="ObjectRef">457102126</item>
+                          </invocationList>
+                        </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="2529338890" multi="true">
+                          <method dataType="ObjectRef">256412964</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="3094963756">
+                            <item dataType="ObjectRef">2529338890</item>
+                          </invocationList>
+                        </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="1221583134" multi="true">
+                          <method dataType="ObjectRef">256412964</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="3025440864">
+                            <item dataType="ObjectRef">1221583134</item>
+                          </invocationList>
+                        </item>
                       </invocationList>
                     </LeftRange>
                     <range_ dataType="Float">20</range_>
@@ -814,7 +898,7 @@
           </item>
         </_items>
         <_size dataType="Int">3</_size>
-        <_version dataType="Int">3</_version>
+        <_version dataType="Int">5</_version>
       </compList>
       <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="1238988160" surrogate="true">
         <header />
@@ -920,7 +1004,7 @@
                 </item>
               </_items>
               <_size dataType="Int">1</_size>
-              <_version dataType="Int">135</_version>
+              <_version dataType="Int">147</_version>
             </shapes>
           </item>
           <item dataType="Struct" type="Battleroom.Utilities.RectangularBody" id="2167613126">
@@ -1070,7 +1154,7 @@
                 </item>
               </_items>
               <_size dataType="Int">1</_size>
-              <_version dataType="Int">85</_version>
+              <_version dataType="Int">97</_version>
             </shapes>
           </item>
           <item dataType="Struct" type="Battleroom.Utilities.RectangularBody" id="282802224">
@@ -1147,20 +1231,20 @@
       <children />
       <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="3895551207">
         <_items dataType="Array" type="Duality.Component[]" id="2367367502" length="4">
-          <item dataType="Struct" type="Battleroom.Player.UserInterface" id="1906219499">
+          <item dataType="Struct" type="Battleroom.Graphics.UserInterface" id="3447827727">
             <active dataType="Bool">true</active>
-            <buffer dataType="Struct" type="Duality.Drawing.CanvasBuffer" id="1277852011">
+            <buffer dataType="Struct" type="Duality.Drawing.CanvasBuffer" id="645907007">
               <dummy dataType="Bool">false</dummy>
-              <vertexArraysFree dataType="Struct" type="System.Collections.Generic.List`1[[Duality.RawList`1[[Duality.Drawing.VertexC1P3T2]]]]" id="2013946998">
-                <_items dataType="Array" type="Duality.RawList`1[[Duality.Drawing.VertexC1P3T2]][]" id="2730971104" length="4" />
+              <vertexArraysFree dataType="Struct" type="System.Collections.Generic.List`1[[Duality.RawList`1[[Duality.Drawing.VertexC1P3T2]]]]" id="3170440366">
+                <_items dataType="Array" type="Duality.RawList`1[[Duality.Drawing.VertexC1P3T2]][]" id="1856774480" length="4" />
                 <_size dataType="Int">0</_size>
                 <_version dataType="Int">3</_version>
               </vertexArraysFree>
-              <vertexArraysUsed dataType="Struct" type="System.Collections.Generic.List`1[[Duality.RawList`1[[Duality.Drawing.VertexC1P3T2]]]]" id="2346692890">
-                <_items dataType="Array" type="Duality.RawList`1[[Duality.Drawing.VertexC1P3T2]][]" id="1219279684" length="4">
-                  <item dataType="Struct" type="Duality.RawList`1[[Duality.Drawing.VertexC1P3T2]]" id="3145123396">
-                    <count dataType="Int">7</count>
-                    <data dataType="Array" type="Duality.Drawing.VertexC1P3T2[]" id="4171553348">
+              <vertexArraysUsed dataType="Struct" type="System.Collections.Generic.List`1[[Duality.RawList`1[[Duality.Drawing.VertexC1P3T2]]]]" id="2422867658">
+                <_items dataType="Array" type="Duality.RawList`1[[Duality.Drawing.VertexC1P3T2]][]" id="314961196" length="4">
+                  <item dataType="Struct" type="Duality.RawList`1[[Duality.Drawing.VertexC1P3T2]]" id="4172992228">
+                    <count dataType="Int">18</count>
+                    <data dataType="Array" type="Duality.Drawing.VertexC1P3T2[]" id="3952177092">
                       <item dataType="Struct" type="Duality.Drawing.VertexC1P3T2">
                         <Color dataType="Struct" type="Duality.Drawing.ColorRgba">
                           <A dataType="Byte">255</A>
@@ -1169,8 +1253,8 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">-1</X>
-                          <Y dataType="Float">-1</Y>
+                          <X dataType="Float">219</X>
+                          <Y dataType="Float">0</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
                         <TexCoord dataType="Struct" type="Duality.Vector2">
@@ -1186,8 +1270,8 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">-1</X>
-                          <Y dataType="Float">-3</Y>
+                          <X dataType="Float">219</X>
+                          <Y dataType="Float">-10</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
                         <TexCoord dataType="Struct" type="Duality.Vector2">
@@ -1203,13 +1287,13 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">0.902112961</X>
-                          <Y dataType="Float">-1.61803389</Y>
+                          <X dataType="Float">222.826828</X>
+                          <Y dataType="Float">-9.238795</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
                         <TexCoord dataType="Struct" type="Duality.Vector2">
-                          <X dataType="Float">0.97552824</X>
-                          <Y dataType="Float">0.345491529</Y>
+                          <X dataType="Float">0.691341758</X>
+                          <Y dataType="Float">0.0380602479</Y>
                         </TexCoord>
                       </item>
                       <item dataType="Struct" type="Duality.Drawing.VertexC1P3T2">
@@ -1220,13 +1304,13 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">0.175570488</X>
-                          <Y dataType="Float">0.6180341</Y>
+                          <X dataType="Float">226.071075</X>
+                          <Y dataType="Float">-7.071068</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
                         <TexCoord dataType="Struct" type="Duality.Vector2">
-                          <X dataType="Float">0.7938926</X>
-                          <Y dataType="Float">0.904508531</Y>
+                          <X dataType="Float">0.8535534</X>
+                          <Y dataType="Float">0.146446615</Y>
                         </TexCoord>
                       </item>
                       <item dataType="Struct" type="Duality.Drawing.VertexC1P3T2">
@@ -1237,13 +1321,13 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">-2.17557073</X>
-                          <Y dataType="Float">0.6180339</Y>
+                          <X dataType="Float">228.2388</X>
+                          <Y dataType="Float">-3.8268342</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
                         <TexCoord dataType="Struct" type="Duality.Vector2">
-                          <X dataType="Float">0.206107318</X>
-                          <Y dataType="Float">0.9045085</Y>
+                          <X dataType="Float">0.961939752</X>
+                          <Y dataType="Float">0.3086583</Y>
                         </TexCoord>
                       </item>
                       <item dataType="Struct" type="Duality.Drawing.VertexC1P3T2">
@@ -1254,13 +1338,13 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">-2.902113</X>
-                          <Y dataType="Float">-1.61803424</Y>
+                          <X dataType="Float">229</X>
+                          <Y dataType="Float">0</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
                         <TexCoord dataType="Struct" type="Duality.Vector2">
-                          <X dataType="Float">0.02447176</X>
-                          <Y dataType="Float">0.345491439</Y>
+                          <X dataType="Float">1</X>
+                          <Y dataType="Float">0.5</Y>
                         </TexCoord>
                       </item>
                       <item dataType="Struct" type="Duality.Drawing.VertexC1P3T2">
@@ -1271,12 +1355,199 @@
                           <R dataType="Byte">255</R>
                         </Color>
                         <Pos dataType="Struct" type="Duality.Vector3">
-                          <X dataType="Float">-0.999999642</X>
-                          <Y dataType="Float">-3</Y>
+                          <X dataType="Float">228.2388</X>
+                          <Y dataType="Float">3.82683563</Y>
+                          <Z dataType="Float">0</Z>
+                        </Pos>
+                        <TexCoord dataType="Struct" type="Duality.Vector2">
+                          <X dataType="Float">0.961939752</X>
+                          <Y dataType="Float">0.691341758</Y>
+                        </TexCoord>
+                      </item>
+                      <item dataType="Struct" type="Duality.Drawing.VertexC1P3T2">
+                        <Color dataType="Struct" type="Duality.Drawing.ColorRgba">
+                          <A dataType="Byte">255</A>
+                          <B dataType="Byte">255</B>
+                          <G dataType="Byte">255</G>
+                          <R dataType="Byte">255</R>
+                        </Color>
+                        <Pos dataType="Struct" type="Duality.Vector3">
+                          <X dataType="Float">226.071075</X>
+                          <Y dataType="Float">7.071068</Y>
+                          <Z dataType="Float">0</Z>
+                        </Pos>
+                        <TexCoord dataType="Struct" type="Duality.Vector2">
+                          <X dataType="Float">0.8535534</X>
+                          <Y dataType="Float">0.8535534</Y>
+                        </TexCoord>
+                      </item>
+                      <item dataType="Struct" type="Duality.Drawing.VertexC1P3T2">
+                        <Color dataType="Struct" type="Duality.Drawing.ColorRgba">
+                          <A dataType="Byte">255</A>
+                          <B dataType="Byte">255</B>
+                          <G dataType="Byte">255</G>
+                          <R dataType="Byte">255</R>
+                        </Color>
+                        <Pos dataType="Struct" type="Duality.Vector3">
+                          <X dataType="Float">222.826828</X>
+                          <Y dataType="Float">9.238796</Y>
+                          <Z dataType="Float">0</Z>
+                        </Pos>
+                        <TexCoord dataType="Struct" type="Duality.Vector2">
+                          <X dataType="Float">0.691341758</X>
+                          <Y dataType="Float">0.961939752</Y>
+                        </TexCoord>
+                      </item>
+                      <item dataType="Struct" type="Duality.Drawing.VertexC1P3T2">
+                        <Color dataType="Struct" type="Duality.Drawing.ColorRgba">
+                          <A dataType="Byte">255</A>
+                          <B dataType="Byte">255</B>
+                          <G dataType="Byte">255</G>
+                          <R dataType="Byte">255</R>
+                        </Color>
+                        <Pos dataType="Struct" type="Duality.Vector3">
+                          <X dataType="Float">219</X>
+                          <Y dataType="Float">10</Y>
                           <Z dataType="Float">0</Z>
                         </Pos>
                         <TexCoord dataType="Struct" type="Duality.Vector2">
                           <X dataType="Float">0.50000006</X>
+                          <Y dataType="Float">1</Y>
+                        </TexCoord>
+                      </item>
+                      <item dataType="Struct" type="Duality.Drawing.VertexC1P3T2">
+                        <Color dataType="Struct" type="Duality.Drawing.ColorRgba">
+                          <A dataType="Byte">255</A>
+                          <B dataType="Byte">255</B>
+                          <G dataType="Byte">255</G>
+                          <R dataType="Byte">255</R>
+                        </Color>
+                        <Pos dataType="Struct" type="Duality.Vector3">
+                          <X dataType="Float">215.173172</X>
+                          <Y dataType="Float">9.238796</Y>
+                          <Z dataType="Float">0</Z>
+                        </Pos>
+                        <TexCoord dataType="Struct" type="Duality.Vector2">
+                          <X dataType="Float">0.3086584</X>
+                          <Y dataType="Float">0.9619398</Y>
+                        </TexCoord>
+                      </item>
+                      <item dataType="Struct" type="Duality.Drawing.VertexC1P3T2">
+                        <Color dataType="Struct" type="Duality.Drawing.ColorRgba">
+                          <A dataType="Byte">255</A>
+                          <B dataType="Byte">255</B>
+                          <G dataType="Byte">255</G>
+                          <R dataType="Byte">255</R>
+                        </Color>
+                        <Pos dataType="Struct" type="Duality.Vector3">
+                          <X dataType="Float">211.92894</X>
+                          <Y dataType="Float">7.07106972</Y>
+                          <Z dataType="Float">0</Z>
+                        </Pos>
+                        <TexCoord dataType="Struct" type="Duality.Vector2">
+                          <X dataType="Float">0.1464467</X>
+                          <Y dataType="Float">0.853553534</Y>
+                        </TexCoord>
+                      </item>
+                      <item dataType="Struct" type="Duality.Drawing.VertexC1P3T2">
+                        <Color dataType="Struct" type="Duality.Drawing.ColorRgba">
+                          <A dataType="Byte">255</A>
+                          <B dataType="Byte">255</B>
+                          <G dataType="Byte">255</G>
+                          <R dataType="Byte">255</R>
+                        </Color>
+                        <Pos dataType="Struct" type="Duality.Vector3">
+                          <X dataType="Float">209.7612</X>
+                          <Y dataType="Float">3.82683563</Y>
+                          <Z dataType="Float">0</Z>
+                        </Pos>
+                        <TexCoord dataType="Struct" type="Duality.Vector2">
+                          <X dataType="Float">0.0380602479</X>
+                          <Y dataType="Float">0.691341758</Y>
+                        </TexCoord>
+                      </item>
+                      <item dataType="Struct" type="Duality.Drawing.VertexC1P3T2">
+                        <Color dataType="Struct" type="Duality.Drawing.ColorRgba">
+                          <A dataType="Byte">255</A>
+                          <B dataType="Byte">255</B>
+                          <G dataType="Byte">255</G>
+                          <R dataType="Byte">255</R>
+                        </Color>
+                        <Pos dataType="Struct" type="Duality.Vector3">
+                          <X dataType="Float">209</X>
+                          <Y dataType="Float">0</Y>
+                          <Z dataType="Float">0</Z>
+                        </Pos>
+                        <TexCoord dataType="Struct" type="Duality.Vector2">
+                          <X dataType="Float">0</X>
+                          <Y dataType="Float">0.5</Y>
+                        </TexCoord>
+                      </item>
+                      <item dataType="Struct" type="Duality.Drawing.VertexC1P3T2">
+                        <Color dataType="Struct" type="Duality.Drawing.ColorRgba">
+                          <A dataType="Byte">255</A>
+                          <B dataType="Byte">255</B>
+                          <G dataType="Byte">255</G>
+                          <R dataType="Byte">255</R>
+                        </Color>
+                        <Pos dataType="Struct" type="Duality.Vector3">
+                          <X dataType="Float">209.7612</X>
+                          <Y dataType="Float">-3.826836</Y>
+                          <Z dataType="Float">0</Z>
+                        </Pos>
+                        <TexCoord dataType="Struct" type="Duality.Vector2">
+                          <X dataType="Float">0.0380602777</X>
+                          <Y dataType="Float">0.308658183</Y>
+                        </TexCoord>
+                      </item>
+                      <item dataType="Struct" type="Duality.Drawing.VertexC1P3T2">
+                        <Color dataType="Struct" type="Duality.Drawing.ColorRgba">
+                          <A dataType="Byte">255</A>
+                          <B dataType="Byte">255</B>
+                          <G dataType="Byte">255</G>
+                          <R dataType="Byte">255</R>
+                        </Color>
+                        <Pos dataType="Struct" type="Duality.Vector3">
+                          <X dataType="Float">211.92894</X>
+                          <Y dataType="Float">-7.07107</Y>
+                          <Z dataType="Float">0</Z>
+                        </Pos>
+                        <TexCoord dataType="Struct" type="Duality.Vector2">
+                          <X dataType="Float">0.146446735</X>
+                          <Y dataType="Float">0.1464465</Y>
+                        </TexCoord>
+                      </item>
+                      <item dataType="Struct" type="Duality.Drawing.VertexC1P3T2">
+                        <Color dataType="Struct" type="Duality.Drawing.ColorRgba">
+                          <A dataType="Byte">255</A>
+                          <B dataType="Byte">255</B>
+                          <G dataType="Byte">255</G>
+                          <R dataType="Byte">255</R>
+                        </Color>
+                        <Pos dataType="Struct" type="Duality.Vector3">
+                          <X dataType="Float">215.173172</X>
+                          <Y dataType="Float">-9.238797</Y>
+                          <Z dataType="Float">0</Z>
+                        </Pos>
+                        <TexCoord dataType="Struct" type="Duality.Vector2">
+                          <X dataType="Float">0.3086585</X>
+                          <Y dataType="Float">0.03806013</Y>
+                        </TexCoord>
+                      </item>
+                      <item dataType="Struct" type="Duality.Drawing.VertexC1P3T2">
+                        <Color dataType="Struct" type="Duality.Drawing.ColorRgba">
+                          <A dataType="Byte">255</A>
+                          <B dataType="Byte">255</B>
+                          <G dataType="Byte">255</G>
+                          <R dataType="Byte">255</R>
+                        </Color>
+                        <Pos dataType="Struct" type="Duality.Vector3">
+                          <X dataType="Float">219</X>
+                          <Y dataType="Float">-10</Y>
+                          <Z dataType="Float">0</Z>
+                        </Pos>
+                        <TexCoord dataType="Struct" type="Duality.Vector2">
+                          <X dataType="Float">0.5000003</X>
                           <Y dataType="Float">0</Y>
                         </TexCoord>
                       </item>
@@ -1291,16 +1562,16 @@
           </item>
         </_items>
         <_size dataType="Int">1</_size>
-        <_version dataType="Int">5</_version>
+        <_version dataType="Int">15</_version>
       </compList>
       <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="4031371136" surrogate="true">
         <header />
         <body>
           <keys dataType="Array" type="System.Object[]" id="1310036429">
-            <item dataType="Type" id="595976742" value="Battleroom.Player.UserInterface" />
+            <item dataType="Type" id="595976742" value="Battleroom.Graphics.UserInterface" />
           </keys>
           <values dataType="Array" type="System.Object[]" id="3102828728">
-            <item dataType="ObjectRef">1906219499</item>
+            <item dataType="ObjectRef">3447827727</item>
           </values>
         </body>
       </compMap>

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Duality.Drawing;
 using Duality.Resources;
 
-namespace Battleroom.Player
+namespace Battleroom.Graphics
 {
     public class UserInterface : Component, ICmpRenderer, ICmpUpdatable
     {
@@ -31,7 +31,7 @@ namespace Battleroom.Player
             canvas.State.SetMaterial(new BatchInfo(DrawTechnique.Alpha, ColorRgba.White));
 
             // Draw a circle at the mouse position
-            canvas.FillCircle(DualityApp.Mouse.X, DualityApp.Mouse.Y, 2.0f);
+            canvas.FillCircle(DualityApp.Mouse.X, DualityApp.Mouse.Y, 10f);
         }
 
         public bool IsVisible(IDrawDevice device)

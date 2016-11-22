@@ -70,14 +70,15 @@ namespace Battleroom
                 case Duality.Input.Key.W:
                     Movement.CrawlUp = false;
                     break;
-                case Duality.Input.Key.ShiftLeft:
+                case Duality.Input.Key.Space:
                     if (Movement.Gripping == GripState.SHOULD_GRIP)
                     {
                         Movement.Gripping = GripState.NO_GRIP;
                     }
-                    break;
-                case Duality.Input.Key.ControlLeft:
-                    Movement.Jump(MouseRelativeToTransform().Angle);
+                    else if (Movement.Gripping == GripState.GRIPPING)
+                    {
+                        Movement.Jump(MouseRelativeToTransform().Angle);
+                    }
                     break;
             }
         }
@@ -98,8 +99,14 @@ namespace Battleroom
                 case Duality.Input.Key.W:
                     Movement.CrawlUp = true;
                     break;
-                case Duality.Input.Key.ShiftLeft:
+                case Duality.Input.Key.Space:
                     if(Movement.Gripping == GripState.NO_GRIP)
+                    {
+                        Movement.Gripping = GripState.SHOULD_GRIP;
+                    }
+                    break;
+                case Duality.Input.Key.ShiftLeft:
+                    if (Movement.Gripping == GripState.NO_GRIP)
                     {
                         Movement.Gripping = GripState.SHOULD_GRIP;
                     }
