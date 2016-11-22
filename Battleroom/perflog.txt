@@ -2,49 +2,51 @@
 --------------------[ TimeCounter ]---------------
 
 Name                          Avg. Value    Min. Value    Max. Value         Samples 
-Duality\Frame:                     25.12          0.00        158.58            1028 
-  Update:                           0.26          0.00         60.01            1028 
-    Physics:                        0.08          0.00         22.49            1028 
-      Contacts:                     0.03          0.00         11.30            1028 
-      Controller:                   0.00          0.00          0.01            1028 
-      Continous:                    0.01          0.00          6.00            1028 
-      AddRemove:                    0.00          0.00          0.02            1028 
-      Solve:                        0.04          0.00         16.45            1028 
-    Scene:                          0.07          0.00         12.55            1028 
-      All Components:               0.07          0.00          9.05            1028 
-      Transform:                    0.01          0.00          0.55            1027 
-      CameraController:             0.01          0.00          2.09            1027 
-      RigidBody:                    0.01          0.00          4.71            1027 
-      BeamGun:                      0.01          0.00          4.33            1027 
-      SoldierMovement:              0.00          0.00          1.34            1027 
-      Soldier:                      0.00          0.00          0.25            1027 
-    Audio:                          0.01          0.00          1.82            1028 
-  Render:                          24.78          0.00         93.91            1028 
-    SwapBuffers:                   24.42          0.00         25.76            1028 
-    QueryVisibleRenderers:          0.02          0.00          4.76            1028 
-    CollectDrawcalls:               0.10          0.00         14.85            1028 
-      Boundary:                     0.03          0.01         13.33            1027 
-      Obstacle:                     0.00          0.00          1.50             807 
-      BeamGun:                      0.00          0.00          0.44            1026 
-      Soldier:                      0.02          0.01          7.07            1023 
-      RigidBodyRenderer:            0.04          0.02          7.53            1023 
-    OptimizeDrawcalls:              0.01          0.00          0.72            1028 
-    ProcessDrawcalls:               0.16          0.00         23.04            1028 
+Duality\Frame:                      0.97          0.00        484.91           42225 
+  Update:                           0.15          0.00        181.49           42225 
+    Physics:                        0.03          0.00         47.31           42225 
+      Contacts:                     0.01          0.00         25.82           42225 
+      Controller:                   0.00          0.00          0.18           42225 
+      Continous:                    0.00          0.00         11.77           42225 
+      AddRemove:                    0.00          0.00          0.09           42225 
+      Solve:                        0.02          0.00         34.70           42225 
+    Scene:                          0.04          0.00         42.23           42225 
+      All Components:               0.04          0.00         33.20           42225 
+      Transform:                    0.01          0.01          1.34           42224 
+      CameraController:             0.00          0.00          8.54           42224 
+      RigidBody:                    0.00          0.00         15.91           42224 
+      BeamGun:                      0.00          0.00         13.16           42224 
+      SoldierMovement:              0.00          0.00          3.91           42224 
+      Soldier:                      0.00          0.00          0.66           42224 
+      MouseRenderer:                0.00          0.00          1.07           42224 
+    Audio:                          0.01          0.00          4.67           42225 
+  Render:                           0.79          0.00        285.01           42225 
+    SwapBuffers:                    0.28          0.00         18.89           42225 
+    QueryVisibleRenderers:          0.01          0.00         19.36           42225 
+    CollectDrawcalls:               0.12          0.00        127.98           42225 
+      Boundary:                     0.01          0.01         47.99           42224 
+      Obstacle:                     0.00          0.00          6.39           34763 
+      VisualLogRenderer:            0.04          0.03         73.47           42224 
+      BeamGun:                      0.00          0.00          0.59           42223 
+      RigidBodyRenderer:            0.04          0.03         11.20           42186 
+      Soldier:                      0.01          0.01          7.53           42185 
+    OptimizeDrawcalls:              0.01          0.00          4.95           42225 
+    ProcessDrawcalls:               0.23          0.00         55.20           42225 
     PostProcessing:                 0.00          0.00          0.00               1 
-  Log:                              7.51          7.51          7.51               1 
+  Log:                            182.67        182.67        182.67               1 
 Duality\VisualPicking:              0.00          0.00          0.00               1 
-Cameras\Camera:                     0.36          0.13         68.16            1027 
+Cameras\Camera:                     0.51          0.27        266.12           42224 
 
 --------------------[ StatCounter ]---------------
 
 Name                                         Avg. Value    Min. Value    Max. Value         Samples 
-Duality\Stats\Audio\NumPlaying2D:                     0             0             0            1028 
-Duality\Stats\Audio\NumPlaying3D:                     0             0             0            1028 
-Duality\Stats\Render\NumDrawcalls:                    9             0             9            1028 
-Duality\Stats\Render\NumRawBatches:                   8             0             9            1028 
-Duality\Stats\Render\NumMergedBatches:                8             0             9            1028 
-Duality\Stats\Render\NumOptimizedBatches:             8             0             8            1028 
-Duality\Stats\Memory\TotalUsage:                  11229          9652         12719            1028 
-Duality\Stats\Memory\GarbageCollect0:                 6             -             -               - 
-Duality\Stats\Memory\GarbageCollect1:                 3             -             -               - 
-Duality\Stats\Memory\GarbageCollect2:                 2             -             -               - 
+Duality\Stats\Audio\NumPlaying2D:                     0             0             0           42225 
+Duality\Stats\Audio\NumPlaying3D:                     0             0             0           42225 
+Duality\Stats\Render\NumDrawcalls:                   14             0            14           42225 
+Duality\Stats\Render\NumRawBatches:                  12             0            13           42225 
+Duality\Stats\Render\NumMergedBatches:               12             0            13           42225 
+Duality\Stats\Render\NumOptimizedBatches:            12             0            12           42225 
+Duality\Stats\Memory\TotalUsage:                   6449          4187         15930           42225 
+Duality\Stats\Memory\GarbageCollect0:               368             -             -               - 
+Duality\Stats\Memory\GarbageCollect1:                 7             -             -               - 
+Duality\Stats\Memory\GarbageCollect2:                 3             -             -               - 

@@ -137,7 +137,7 @@
                         </item>
                       </_items>
                       <_size dataType="Int">2</_size>
-                      <_version dataType="Int">230</_version>
+                      <_version dataType="Int">236</_version>
                     </shapes>
                   </item>
                   <item dataType="Struct" type="Battleroom.RangeSensor" id="1058522610">
@@ -408,6 +408,13 @@
                             <item dataType="ObjectRef">1164026554</item>
                           </invocationList>
                         </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="4197228530" multi="true">
+                          <method dataType="ObjectRef">3520568864</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="143875792">
+                            <item dataType="ObjectRef">4197228530</item>
+                          </invocationList>
+                        </item>
                       </invocationList>
                     </EnteredRange>
                     <gameobj dataType="ObjectRef">3217682156</gameobj>
@@ -639,6 +646,13 @@
                             <item dataType="ObjectRef">3147216570</item>
                           </invocationList>
                         </item>
+                        <item dataType="Delegate" type="System.EventHandler" id="843432302" multi="true">
+                          <method dataType="ObjectRef">256412964</method>
+                          <target dataType="ObjectRef">4165832666</target>
+                          <invocationList dataType="Array" type="System.Delegate[]" id="2636466000">
+                            <item dataType="ObjectRef">843432302</item>
+                          </invocationList>
+                        </item>
                       </invocationList>
                     </LeftRange>
                     <range_ dataType="Float">20</range_>
@@ -850,7 +864,7 @@
                 </item>
               </_items>
               <_size dataType="Int">1</_size>
-              <_version dataType="Int">125</_version>
+              <_version dataType="Int">127</_version>
             </shapes>
           </item>
           <item dataType="Struct" type="Battleroom.Utilities.RectangularBody" id="2167613126">
@@ -1000,7 +1014,7 @@
                 </item>
               </_items>
               <_size dataType="Int">1</_size>
-              <_version dataType="Int">75</_version>
+              <_version dataType="Int">77</_version>
             </shapes>
           </item>
           <item dataType="Struct" type="Battleroom.Utilities.RectangularBody" id="282802224">
@@ -1069,6 +1083,42 @@
       </identifier>
       <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
       <name dataType="String">Obstacle</name>
+      <parent />
+      <prefabLink />
+    </item>
+    <item dataType="Struct" type="Duality.GameObject" id="3372874901">
+      <active dataType="Bool">true</active>
+      <children />
+      <compList dataType="Struct" type="System.Collections.Generic.List`1[[Duality.Component]]" id="3895551207">
+        <_items dataType="Array" type="Duality.Component[]" id="2367367502" length="4">
+          <item dataType="Struct" type="Battleroom.Graphics.MouseRenderer" id="473966025">
+            <active dataType="Bool">true</active>
+            <gameobj dataType="ObjectRef">3372874901</gameobj>
+          </item>
+        </_items>
+        <_size dataType="Int">1</_size>
+        <_version dataType="Int">1</_version>
+      </compList>
+      <compMap dataType="Struct" type="System.Collections.Generic.Dictionary`2[[System.Type],[Duality.Component]]" id="4031371136" surrogate="true">
+        <header />
+        <body>
+          <keys dataType="Array" type="System.Object[]" id="1310036429">
+            <item dataType="Type" id="595976742" value="Battleroom.Graphics.MouseRenderer" />
+          </keys>
+          <values dataType="Array" type="System.Object[]" id="3102828728">
+            <item dataType="ObjectRef">473966025</item>
+          </values>
+        </body>
+      </compMap>
+      <compTransform />
+      <identifier dataType="Struct" type="System.Guid" surrogate="true">
+        <header>
+          <data dataType="Array" type="System.Byte[]" id="3415754663">37rWGN8fxEaT685GjolXjg==</data>
+        </header>
+        <body />
+      </identifier>
+      <initState dataType="Enum" type="Duality.InitState" name="Initialized" value="1" />
+      <name dataType="String">Interface</name>
       <parent />
       <prefabLink />
     </item>

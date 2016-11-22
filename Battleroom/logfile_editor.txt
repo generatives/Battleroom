@@ -1,12 +1,12 @@
 [Core] Msg: Using 'DefaultPluginLoader' to load plugins.
 [Core] Msg: Environment Info: 
-              Current Directory: C:\Development\GameDevelopment\Battleroom\Battleroom
-              Command Line: "C:\Development\GameDevelopment\Battleroom\Battleroom\DualityEditor.exe" 
+              Current Directory: C:\Users\Quinn\Documents\GitHub\Battleroom\Battleroom
+              Command Line: "C:\Users\Quinn\Documents\GitHub\Battleroom\Battleroom\DualityEditor.exe" 
               Operating System: Microsoft Windows NT 6.2.9200.0 (Windows 8)
               64 Bit OS: True
               64 Bit Process: True
               CLR Version: 4.0.30319.42000
-              Processor Count: 8
+              Processor Count: 4
 [Core] Msg: Currently Loaded Assemblies:
               mscorlib 4.0.0.0
               DualityEditor 2.6.5.0
@@ -89,14 +89,13 @@
                   EnableHighResolution: False
 [Core] Msg: Initializing IAudioBackend...
 [Core] Msg:   OpenAL (OpenTK)...
-[Core] Msg:     OpenAL Drivers installed in C:\WINDOWS\system32\OpenAL32.dll
+[Core] Msg:     OpenAL Drivers not found. Using 64 Bit software fallback.
 [Core] Msg:     Available devices:
-                  Generic Software on Speakers (Realtek High Definition Audio) (Default)
-                  Generic Software on Realtek Digital Output (Realtek High Definition Audio)
-[Core] Msg:     Current device: Generic Software
-[Core] Msg:     OpenAL Version: 1.1
-                Vendor: Creative Labs Inc.
-                Renderer: Software
+                  Speakers (Realtek High Definition Audio) (Default)
+[Core] Msg:     Current device: OpenAL Soft
+[Core] Msg:     OpenAL Version: 1.1 ALSOFT 1.15.1
+                Vendor: OpenAL Community
+                Renderer: OpenAL Soft
                 Effects: True
 [Core] Msg:     256 sources available
 [Core] Msg: Initializing core plugins...
@@ -163,10 +162,1238 @@
 [Edit] Msg:   ProjectView.editor...
 [Edit] Msg:   SceneView.editor...
 [Core] Msg: Assembly loaded: FarseerDuality 4.1.1.0
+[Core] Msg: Loading Resource 'Data\Player.Prefab.res'
+[Core] ERR:   Can't resolve Member 'M:Battleroom.Grip.CanGrip:<OnInit>b__8_0(System.Object,System.EventArgs)' in object Id 1366281518. Member not found.
+[Core] ERR:   Can't resolve Member 'M:Battleroom.Grip.CanGrip:<OnInit>b__8_1(System.Object,System.EventArgs)' in object Id 3301086389. Member not found.
 [Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonDown(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 49
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 246
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR: An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+            CallStack:
+               at Battleroom.LocalInput.Mouse_ButtonUp(Object sender, MouseButtonEventArgs e) in C:\Development\GameDevelopment\Battleroom\Battleroom\Source\Code\CorePlugin\Player\LocalInput.cs:line 44
+               at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+               at Duality.Input.MouseInput.Update() in c:\projects\duality\Duality\Input\StateManagers\MouseInput.cs:line 258
+               at Duality.DualityApp.UpdateUserInput() in c:\projects\duality\Duality\DualityApp.cs:line 722
+               at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 546
+               at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Core] Msg: Assembly loaded: Windows7.DesktopIntegration 1.0.0.0
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
 [Core] Msg: Loading Resource 'Data\Scene.Scene.res'
 [Edit] Msg: Saving user data...
-[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
 [Core] Msg: Shutting down GLControl (OpenTK)...
 [Core] Msg: Shutting down OpenGL 2.1 (OpenTK)...
 [Core] Msg: Shutting down OpenAL (OpenTK)...

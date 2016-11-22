@@ -16,7 +16,7 @@ namespace Battleroom
         {
             base.OnBeforeUpdate();
 
-            //VisualLog.Default.DrawText(10, 10, string.Format("FPS: {0}", 1f / (Time.LastDelta / 1000f)));
+            VisualLog.Default.DrawText(10, 10, string.Format("FPS: {0}", 1f / (Time.LastDelta / 1000f)));
         }
     }
 }
