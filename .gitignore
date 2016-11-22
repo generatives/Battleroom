@@ -3,3 +3,4 @@ Battleroom/Source/Code/CorePlugin/bin
 Battleroom/Source/Code/CorePlugin/obj
 Battleroom/Source/Code/EditorPlugin/bin
 Battleroom/Source/Code/EditorPlugin/obj
+!Battleroom/*.*
