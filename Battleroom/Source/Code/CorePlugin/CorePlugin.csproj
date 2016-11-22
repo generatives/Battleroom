@@ -57,7 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Graphics\MouseRenderer.cs" />
+    <Compile Include="Graphics\UserInterface.cs" />
     <Compile Include="Room\Boundary.cs" />
     <Compile Include="Soldier\BeamGun.cs" />
     <Compile Include="Tool\CanHaveTool.cs" />

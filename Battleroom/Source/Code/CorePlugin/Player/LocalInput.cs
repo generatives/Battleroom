@@ -31,12 +31,15 @@ namespace Battleroom
 
         public void OnInit(InitContext context)
         {
-            DualityApp.Keyboard.KeyDown += Keyboard_KeyDown;
-            DualityApp.Keyboard.KeyUp += Keyboard_KeyUp;
+            if (context == InitContext.Activate)
+            {
+                DualityApp.Keyboard.KeyDown += Keyboard_KeyDown;
+                DualityApp.Keyboard.KeyUp += Keyboard_KeyUp;
 
-            DualityApp.Mouse.Move += Mouse_Move;
-            DualityApp.Mouse.ButtonDown += Mouse_ButtonDown;
-            DualityApp.Mouse.ButtonUp += Mouse_ButtonUp;
+                DualityApp.Mouse.Move += Mouse_Move;
+                DualityApp.Mouse.ButtonDown += Mouse_ButtonDown;
+                DualityApp.Mouse.ButtonUp += Mouse_ButtonUp;
+            }
         }
 
         private void Mouse_ButtonUp(object sender, Duality.Input.MouseButtonEventArgs e)
@@ -70,14 +73,38 @@ namespace Battleroom
                 case Duality.Input.Key.W:
                     Movement.CrawlUp = false;
                     break;
-                case Duality.Input.Key.ShiftLeft:
+                case Duality.Input.Key.Space:
                     if (Movement.Gripping == GripState.SHOULD_GRIP)
                     {
                         Movement.Gripping = GripState.NO_GRIP;
                     }
+                    else if (Movement.Gripping == GripState.GRIPPING)
+                    {
+                        if (!DualityApp.Keyboard.KeyPressed(Duality.Input.Key.ShiftLeft))
+                        {
+                            Movement.Jump(MouseRelativeToTransform().Angle);
+                        }
+                    }
                     break;
-                case Duality.Input.Key.ControlLeft:
-                    Movement.Jump(MouseRelativeToTransform().Angle);
+                case Duality.Input.Key.ShiftLeft:
+                    if (Movement.Gripping == GripState.NO_GRIP)
+                    {
+                        Movement.Gripping = GripState.SHOULD_GRIP;
+                    }
+                    else if (Movement.Gripping == GripState.SHOULD_GRIP)
+                    {
+                        Movement.Gripping = GripState.NO_GRIP;
+                    }
+                    break;
+                case Duality.Input.Key.Escape:
+                    if (Time.TimeMult > 0)
+                    {
+                        Time.Freeze();
+                    }
+                    else
+                    {
+                        Time.Resume();
+                    }
                     break;
             }
         }
@@ -98,7 +125,7 @@ namespace Battleroom
                 case Duality.Input.Key.W:
                     Movement.CrawlUp = true;
                     break;
-                case Duality.Input.Key.ShiftLeft:
+                case Duality.Input.Key.Space:
                     if(Movement.Gripping == GripState.NO_GRIP)
                     {
                         Movement.Gripping = GripState.SHOULD_GRIP;
