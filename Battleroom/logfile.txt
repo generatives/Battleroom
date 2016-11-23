@@ -123,5 +123,9 @@
 [Core] Msg:   ...done!
 [Core] Msg: Assembly loaded: FarseerDuality 4.1.1.0
 [Core] Msg: Loading Resource 'Data\Scene.Scene.res'
-[Core] Msg: Assembly loaded: Microsoft.VisualStudio.Debugger.Runtime 14.0.0.0
-[Core] Msg: Assembly loaded: System.Configuration 4.0.0.0
+[Core] Msg: Shutting down OpenGL 2.1 (OpenTK)...
+[Core] Msg: Shutting down OpenAL (OpenTK)...
+[Core] Wrn: Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn: Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Msg: Shutting down .Net Framework...
+[Core] Msg: DualityApp terminated

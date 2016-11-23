@@ -15,28 +15,35 @@ namespace Battleroom.Tooling.Cmd
 
     public class CmdOverlay
     {
-        private static Dictionary<string, Command> Commands { get; set; }
+        private static List<Command> Commands { get; set; }
 
         public static bool Enabled { get; set; }
 
         static CmdOverlay()
         {
-            Commands = new Dictionary<string, Command>();
+            Commands = new List<Command>();
         }
 
         public static void AddCommands(object obj)
         {
             var methods = obj.GetType().GetTypeInfo().DeclaredMethods.Where(m => m.GetCustomAttribute<CmdOverlayCommandAttribute>() != null);
+            var instanceName = "";
+
+            if(obj is Component)
+            {
+                Component component = obj as Component;
+                instanceName = component.GameObj.Name;
+            }
 
             foreach (var method in methods)
             {
                 var attribute = method.GetCustomAttribute<CmdOverlayCommandAttribute>();
                 string name = method.Name;
-                if (attribute != null)
+                if (!string.IsNullOrEmpty(attribute.Name))
                 {
                     name = attribute.Name;
                 }
-                Commands[name] = new Command() { Instance = obj, Method = method };
+                Commands.Add(new Command() { Instance = obj, Method = method, Name = name, InstanceName = instanceName });
             }
         }
         
@@ -91,11 +98,31 @@ namespace Battleroom.Tooling.Cmd
             string[] splitCommand = commandString.Split(' ');
             if(splitCommand.Length > 0)
             {
-                string name = splitCommand[0];
-                if(Commands.ContainsKey(name))
+                string firstArg = splitCommand[0];
+                string[] instanceAndName = firstArg.Split('.');
+                string name = "";
+                string instanceName = "";
+                if(instanceAndName.Length == 1)
+                {
+                    name = instanceAndName[0];
+                }
+                else if(instanceAndName.Length == 2)
+                {
+                    name = instanceAndName[1];
+                    instanceName = instanceAndName[0];
+                }
+                else
+                {
+                    throw new Exception("Cmd says WTF");
+                }
+
+                Command command = instanceName == "" ?
+                    Commands.FirstOrDefault(c => c.Name == name) :
+                    Commands.FirstOrDefault(c => c.Name == name && c.InstanceName == instanceName);
+
+                if(command != null)
                 {
                     var stringParameters = splitCommand.Skip(1).ToArray();
-                    var command = Commands[name];
                     var method = command.Method;
                     var parameters = method.GetParameters();
 
@@ -164,6 +191,8 @@ namespace Battleroom.Tooling.Cmd
 
     class Command
     {
+        public string Name { get; set; }
+        public string InstanceName { get; set; }
         public object Instance { get; set; }
         public MethodInfo Method { get; set; }
     }
