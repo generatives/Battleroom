@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 
 using Duality;
+using Battleroom.Tooling.Cmd;
 
 namespace Battleroom
 {
@@ -12,11 +13,19 @@ namespace Battleroom
 	/// </summary>
 	public class BattleroomCorePlugin : CorePlugin
 	{
+        private CmdOverlay cmdOverlay;
+
+        protected override void InitPlugin()
+        {
+            base.InitPlugin();
+
+            cmdOverlay = new CmdOverlay();
+        }
+
         protected override void OnBeforeUpdate()
         {
             base.OnBeforeUpdate();
-
-            VisualLog.Default.DrawText(10, 10, string.Format("FPS: {0}", 1f / (Time.LastDelta / 1000f)));
+            cmdOverlay.OnUpdate();
         }
     }
 }
