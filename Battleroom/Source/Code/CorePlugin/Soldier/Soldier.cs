@@ -77,16 +77,7 @@ namespace Battleroom
                 Body.CollidesWith |= CollisionCatagories.Room;
                 Body.CollisionCategory |= CollisionCatagories.Player;
                 UpdateShape();
-
-                CmdOverlay.AddCommands(this);
             }
-        }
-
-        [CmdOverlayCommand(Name = "fire")]
-        public void IsFiringCommand(bool val, string num, float fl)
-        {
-            BeamGun gun = GameObj.GetComponent<BeamGun>();
-            gun.IsFiring = val;
         }
 
         public void OnShutdown(ShutdownContext context)

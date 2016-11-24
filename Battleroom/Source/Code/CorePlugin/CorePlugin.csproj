@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandComponent.cs" />
     <Compile Include="Graphics\UserInterface.cs" />
     <Compile Include="Room\Boundary.cs" />
     <Compile Include="Soldier\BeamGun.cs" />
@@ -76,6 +77,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\RectangularBody.cs" />
     <Compile Include="Utilities\VectorUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AI\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <PropertyGroup>

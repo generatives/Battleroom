@@ -24,6 +24,13 @@ namespace Battleroom.Tooling.Cmd
             Commands = new List<Command>();
         }
 
+        public static void RemoveCommands(object obj)
+        {
+            Commands = Commands
+                .Where(c => c.Instance != obj)
+                .ToList();
+        }
+
         public static void AddCommands(object obj)
         {
             var methods = obj.GetType().GetTypeInfo().DeclaredMethods.Where(m => m.GetCustomAttribute<CmdOverlayCommandAttribute>() != null);
