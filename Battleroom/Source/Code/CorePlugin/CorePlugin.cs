@@ -5,6 +5,7 @@ using System.Text;
 
 using Duality;
 using Battleroom.Tooling.Cmd;
+using Duality.Resources;
 
 namespace Battleroom
 {
@@ -13,6 +14,14 @@ namespace Battleroom
 	/// </summary>
 	public class BattleroomCorePlugin : CorePlugin
 	{
+        public static BattleroomCorePlugin Instance
+        {
+            get
+            {
+                return DualityApp.PluginManager.LoadedPlugins.FirstOrDefault(p => p is BattleroomCorePlugin) as BattleroomCorePlugin;
+            }
+        }
+
         private CmdOverlay cmdOverlay;
 
         protected override void InitPlugin()
@@ -26,6 +35,8 @@ namespace Battleroom
         {
             base.OnBeforeUpdate();
             cmdOverlay.OnUpdate();
+
+            VisualLog.Default.DrawText(10, 10, "FPS: " + Time.Fps);
         }
     }
 }

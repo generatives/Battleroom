@@ -28,10 +28,10 @@ namespace Battleroom.Graphics
 
             // Create a Canvas to auto-generate vertices from high-level drawing commands.
             Canvas canvas = new Canvas(device, this.buffer);
-            canvas.State.SetMaterial(new BatchInfo(DrawTechnique.Alpha, ColorRgba.White));
+            canvas.State.SetMaterial(new BatchInfo(DrawTechnique.Alpha, ColorRgba.Red));
 
             // Draw a circle at the mouse position
-            canvas.FillCircle(DualityApp.Mouse.X, DualityApp.Mouse.Y, 10f);
+            canvas.FillCircle(DualityApp.Mouse.X, DualityApp.Mouse.Y, 5f);
         }
 
         public bool IsVisible(IDrawDevice device)

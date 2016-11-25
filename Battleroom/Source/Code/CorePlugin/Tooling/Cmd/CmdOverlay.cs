@@ -1,5 +1,4 @@
-﻿#if DEBUG
-using Duality;
+﻿using Duality;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -55,10 +54,14 @@ namespace Battleroom.Tooling.Cmd
         }
         
         private string CurrentText { get; set; }
+        private string LastCommand { get; set; }
+        private string LastReturned { get; set; }
 
         public CmdOverlay()
         {
             CurrentText = "";
+            LastCommand = "";
+            LastReturned = "";
             DualityApp.Keyboard.KeyDown += Keyboard_KeyDown;
         }
 
@@ -68,6 +71,10 @@ namespace Battleroom.Tooling.Cmd
             {
                 Enabled = !Enabled;
             }
+            else if(Enabled && e.Key == Duality.Input.Key.Up)
+            {
+                CurrentText = LastCommand;
+            }
             else if (Enabled && e.Key == Duality.Input.Key.Enter)
             {
                 ProcessCommand(CurrentText);
@@ -75,7 +82,10 @@ namespace Battleroom.Tooling.Cmd
             }
             else if (Enabled && e.Key == Duality.Input.Key.BackSpace)
             {
-                CurrentText = CurrentText.Substring(0, CurrentText.Length - 1);
+                if(CurrentText.Length > 0)
+                {
+                    CurrentText = CurrentText.Substring(0, CurrentText.Length - 1);
+                }
             }
             else if (Enabled)
             {
@@ -95,13 +105,15 @@ namespace Battleroom.Tooling.Cmd
         {
             if(Enabled)
             {
-                VisualLog.Default.DrawText(10, DualityApp.TargetResolution.Y - 40, "Command");
-                VisualLog.Default.DrawText(10, DualityApp.TargetResolution.Y - 20, CurrentText);
+                VisualLog.Default.DrawText(10, DualityApp.TargetResolution.Y - 50, ">" + CurrentText + "\n" + LastReturned);
+                //VisualLog.Default.DrawText(30, DualityApp.TargetResolution.Y - 50, CurrentText);
+                //VisualLog.Default.DrawText(10, DualityApp.TargetResolution.Y - 23, LastReturned);
             }
         }
 
         private void ProcessCommand(string commandString)
         {
+            LastCommand = commandString;
             string[] splitCommand = commandString.Split(' ');
             if(splitCommand.Length > 0)
             {
@@ -133,10 +145,10 @@ namespace Battleroom.Tooling.Cmd
                     var method = command.Method;
                     var parameters = method.GetParameters();
 
-                    if(parameters.Length == 1 && parameters[0].ParameterType == typeof(string[]))
-                    {
-                        method.Invoke(command.Instance, new object[] { commandString });
-                    }
+                    //if(parameters.Length == 1 && parameters[0].ParameterType == typeof(string[]))
+                    //{
+                    //    method.Invoke(command.Instance, new object[] { commandString });
+                    //}
 
                     object[] convertedParams = new object[parameters.Length];
 
@@ -190,7 +202,7 @@ namespace Battleroom.Tooling.Cmd
                         }
                     }
 
-                    method.Invoke(command.Instance, convertedParams);
+                    LastReturned = method.Invoke(command.Instance, convertedParams).ToString();
                 }
             }
         }
@@ -210,4 +222,3 @@ namespace Battleroom.Tooling.Cmd
         public string Name { get; set; }
     }
 }
-#endif

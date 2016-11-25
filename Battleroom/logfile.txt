@@ -1,8 +1,8 @@
-[Core] Msg: Running DualityLauncher with flags: Debugging
+[Core] Msg: Running DualityLauncher with flags: RunFromEditor
 [Core] Msg: Using 'DefaultPluginLoader' to load plugins.
 [Core] Msg: Environment Info: 
               Current Directory: C:\Development\GameDevelopment\BattleroomGame\Battleroom
-              Command Line: "C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\..\..\DualityLauncher.exe" 
+              Command Line: "C:\Development\GameDevelopment\BattleroomGame\Battleroom\DualityLauncher.exe" editor
               Operating System: Microsoft Windows NT 6.2.9200.0 (Windows 8)
               64 Bit OS: True
               64 Bit Process: True
@@ -46,6 +46,8 @@
               Plugins\OpenALSoft64.dll
               Plugins\PackageManagerFrontend.editor.dll
               Plugins\ProjectView.editor.dll
+              Plugins\QuickGraph.dll
+              Plugins\QuickGraph.Graphviz.dll
               Plugins\SceneView.editor.dll
 [Core] Msg: Assembly loaded: System.Threading 4.0.0.0
 [Core] Msg: Scanning for core plugins...
@@ -60,12 +62,14 @@
 [Core] Msg:     Assembly loaded: DotNetFrameworkBackend.core 2.1.0.0
 [Core] Msg:   Plugins\GamePlugin.core.dll...
 [Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Msg:     Assembly loaded: QuickGraph 3.6.61114.0
 [Core] Msg: Loading auxiliary libraries...
 [Core] Msg:   Assembly loaded: Duality 2.2.0.0
 [Core] Msg:   Assembly loaded: DualityPrimitives 2.0.0.0
 [Core] Msg:   Assembly loaded: FarseerDuality 4.0.3.0
 [Core] Msg:   Assembly loaded: Jurassic 2.1.0.0
 [Core] Msg:   Assembly loaded: NVorbis 0.7.5.0
+[Core] Msg:   Assembly loaded: QuickGraph.Graphviz 3.6.61114.0
 [Core] Msg: Initializing ISystemBackend...
 [Core] Msg:   .Net Framework...
 [Core] Msg: Assembly loaded: System.Xml.ReaderWriter 4.0.0.0
@@ -99,8 +103,8 @@
 [Core] Msg:   DotNetFrameworkBackend.core...
 [Core] Msg:   GamePlugin.core...
 [Core] Msg: DualityApp initialized
-            Debug Mode: True
-            Command line arguments: 
+            Debug Mode: False
+            Command line arguments: editor
 [Core] Msg: Opening Window...
 [Core] Msg:   Window Specification: 
                 Buffers: 2
@@ -109,8 +113,8 @@
                 AccumFormat: 64 (16161616)
                 Depth: 24
                 Stencil: 8
-                VSync: Off
-                SwapInterval: 0
+                VSync: On
+                SwapInterval: 1
 [Core] Msg:   OpenGL Version: 4.3.0 - Build 20.19.15.4531
               Vendor: Intel
               Renderer: Intel(R) HD Graphics 4600
@@ -123,6 +127,9 @@
 [Core] Msg:   ...done!
 [Core] Msg: Assembly loaded: FarseerDuality 4.1.1.0
 [Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg:   Loading Resource 'Data\Player.Prefab.res'
+[Core] Msg:   Loading Resource 'Data\Boundary.Prefab.res'
+[Core] Msg:   Loading Resource 'Data\Camera.Prefab.res'
 [Core] Msg: Shutting down OpenGL 2.1 (OpenTK)...
 [Core] Msg: Shutting down OpenAL (OpenTK)...
 [Core] Wrn: Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().

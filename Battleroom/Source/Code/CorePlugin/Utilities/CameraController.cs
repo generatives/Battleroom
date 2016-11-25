@@ -25,6 +25,8 @@ namespace Battleroom
             set { this.followOffset_ = value; }
         }
 
+        public float ScrollSpeed { get; set; }
+
 
         public void OnInit(InitContext context)
         {
@@ -47,6 +49,23 @@ namespace Battleroom
 
         void ICmpUpdatable.OnUpdate()
         {
+            if(DualityApp.Keyboard.KeyPressed(Duality.Input.Key.Up))
+            {
+                FollowOffset = new Vector3(FollowOffset.X, FollowOffset.Y - ScrollSpeed * Time.TimeMult, FollowOffset.Z);
+            }
+            else if (DualityApp.Keyboard.KeyPressed(Duality.Input.Key.Down))
+            {
+                FollowOffset = new Vector3(FollowOffset.X, FollowOffset.Y + ScrollSpeed * Time.TimeMult, FollowOffset.Z);
+            }
+            else if (DualityApp.Keyboard.KeyPressed(Duality.Input.Key.Left))
+            {
+                FollowOffset = new Vector3(FollowOffset.X - ScrollSpeed * Time.TimeMult, FollowOffset.Y, FollowOffset.Z);
+            }
+            else if (DualityApp.Keyboard.KeyPressed(Duality.Input.Key.Right))
+            {
+                FollowOffset = new Vector3(FollowOffset.X + ScrollSpeed * Time.TimeMult, FollowOffset.Y, FollowOffset.Z);
+            }
+
             Transform transform = this.GameObj.Transform;
             Transform targetTransform = FollowTarget != null ? FollowTarget.Transform : null;
             if (targetTransform == null) return;
