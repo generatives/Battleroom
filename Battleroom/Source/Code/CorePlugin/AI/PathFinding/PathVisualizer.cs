@@ -34,7 +34,7 @@ namespace Battleroom.AI.PathFinding
                 foreach (var edge in pathFinder.Graph.Edges)
                 {
                     var log = pathVisualizerLog.DrawConnection(edge.Source.Position.X, edge.Source.Position.Y, 0, edge.Target.Position.X, edge.Target.Position.Y);
-                    log.Color = ColorRgba.DarkGrey;
+                    log.Color = ColorRgba.Grey;
                 }
             }
         }

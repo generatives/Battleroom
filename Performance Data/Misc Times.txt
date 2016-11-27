@@ -1,0 +1,2 @@
+Path finding in a relatively small scene with no optimizations took 0.18ms
+Path finding in a larger scene (~4x) with no optimizations took 2.1ms

@@ -55,6 +55,10 @@
     <Reference Include="DualityPrimitives">
       <HintPath>..\..\..\DualityPrimitives.dll</HintPath>
     </Reference>
+    <Reference Include="MoreLinq.Portable, Version=1.4.18916.0, Culture=neutral, PublicKeyToken=384d532d7e88985d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MoreLinq.Portable.1.4.0\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\MoreLinq.Portable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="QuickGraph, Version=3.6.61114.0, Culture=neutral, PublicKeyToken=f3fb40175eec2af3, processorArchitecture=MSIL">
       <HintPath>..\packages\QuickGraphPCL.3.6.61114.2\lib\portable-win+net4+sl5+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\QuickGraph.dll</HintPath>
       <Private>True</Private>
@@ -73,11 +77,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI\AITestGuide.cs" />
     <Compile Include="AI\PathFinding\PathEdge.cs" />
     <Compile Include="AI\PathFinding\PathFinder.cs" />
     <Compile Include="AI\PathFinding\PathVertex.cs" />
     <Compile Include="AI\PathFinding\PathVertexObstacle.cs" />
     <Compile Include="AI\PathFinding\PathVisualizer.cs" />
+    <Compile Include="AI\SoldierController.cs" />
+    <Compile Include="AI\SoldierControllerVisualLog.cs" />
     <Compile Include="CommandComponent.cs" />
     <Compile Include="Graphics\UserInterface.cs" />
     <Compile Include="Room\Boundary.cs" />
@@ -89,6 +96,7 @@
     <Compile Include="Grip\CanGrip.cs" />
     <Compile Include="CorePlugin.cs" />
     <Compile Include="Grip\Grippable.cs" />
+    <Compile Include="Utilities\InputProcessor.cs" />
     <Compile Include="Utilities\RangeSensor.cs" />
     <Compile Include="Room\FloatingGrip.cs" />
     <Compile Include="Room\Obstacle.cs" />

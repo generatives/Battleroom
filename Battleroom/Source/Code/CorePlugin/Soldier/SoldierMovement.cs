@@ -58,7 +58,7 @@ namespace Battleroom
                 return gripping;
             }
 
-            set
+            private set
             {
                 gripping = value;
                 UpdateGrip();
@@ -70,7 +70,7 @@ namespace Battleroom
         public bool CrawlUp { get; set; }
         public bool CrawlDown { get; set; }
 
-        private Grippable gripped;
+        public Grippable Gripped { get; private set; }
         private float topLimit;
         private float bottomLimit;
         private float leftLimit;
@@ -83,7 +83,17 @@ namespace Battleroom
 
         public float JumpStrength { get; set; }
 
-        public void Jump(float angle)
+        public void SetShouldGrip()
+        {
+            Gripping = GripState.SHOULD_GRIP;
+        }
+
+        public void SetNoGrip()
+        {
+            Gripping = GripState.NO_GRIP;
+        }
+
+        public void Jump()
         {
             if (Range.WithinRange)
             {
@@ -122,31 +132,31 @@ namespace Battleroom
                     .FirstOrDefault(s => s.Parent.GameObj.GetComponent<Grippable>() != null);
                 if (shapeInRange != null)
                 {
-                    gripped = shapeInRange.Parent.GameObj.GetComponent<Grippable>();
-                    if (gripped != null)
+                    Gripped = shapeInRange.Parent.GameObj.GetComponent<Grippable>();
+                    if (Gripped != null)
                     {
                         Gripping = GripState.GRIPPING;
                         Body.LinearVelocity = new Vector2();
                         Body.AngularVelocity = 0;
                         //Body.BodyType = BodyType.Kinematic;
 
-                        Rect grabbedShape = gripped.RectangularBody.LoopShape.AABB;
+                        Rect grabbedShape = Gripped.RectangularBody.LoopShape.AABB;
                         Rect soldierShape = Soldier.Shape.AABB;
-                        int side = gripped.FindSide(GameObj.Transform, Soldier.Shape);
+                        int side = Gripped.FindSide(GameObj.Transform, Soldier.Shape);
 
                         if ((side & Grippable.IN) > 0)
                         {
-                            topLimit = gripped.GameObj.Transform.Pos.Y - grabbedShape.H / 2 + soldierShape.H / 2;
-                            bottomLimit = gripped.GameObj.Transform.Pos.Y + grabbedShape.H / 2 - soldierShape.H / 2;
-                            leftLimit = gripped.GameObj.Transform.Pos.X - grabbedShape.W / 2 + soldierShape.W / 2;
-                            rightLimit = gripped.GameObj.Transform.Pos.X + grabbedShape.W / 2 - soldierShape.W / 2;
+                            topLimit = Gripped.GameObj.Transform.Pos.Y - grabbedShape.H / 2 + soldierShape.H / 2;
+                            bottomLimit = Gripped.GameObj.Transform.Pos.Y + grabbedShape.H / 2 - soldierShape.H / 2;
+                            leftLimit = Gripped.GameObj.Transform.Pos.X - grabbedShape.W / 2 + soldierShape.W / 2;
+                            rightLimit = Gripped.GameObj.Transform.Pos.X + grabbedShape.W / 2 - soldierShape.W / 2;
                         }
                         else if ((side & Grippable.OUT) > 0)
                         {
-                            topLimit = gripped.GameObj.Transform.Pos.Y - grabbedShape.H / 2 - soldierShape.H / 2;
-                            bottomLimit = gripped.GameObj.Transform.Pos.Y + grabbedShape.H / 2 + soldierShape.H / 2;
-                            leftLimit = gripped.GameObj.Transform.Pos.X - grabbedShape.W / 2 - soldierShape.W / 2;
-                            rightLimit = gripped.GameObj.Transform.Pos.X + grabbedShape.W / 2 + soldierShape.W / 2;
+                            topLimit = Gripped.GameObj.Transform.Pos.Y - grabbedShape.H / 2 - soldierShape.H / 2;
+                            bottomLimit = Gripped.GameObj.Transform.Pos.Y + grabbedShape.H / 2 + soldierShape.H / 2;
+                            leftLimit = Gripped.GameObj.Transform.Pos.X - grabbedShape.W / 2 - soldierShape.W / 2;
+                            rightLimit = Gripped.GameObj.Transform.Pos.X + grabbedShape.W / 2 + soldierShape.W / 2;
                         }
                     }
                 }
@@ -165,9 +175,9 @@ namespace Battleroom
                 bool shouldMove = false;
                 if (CrawlLeft || CrawlRight || CrawlDown || CrawlUp)
                 {
-                    int side = gripped.FindSide(GameObj.Transform, Soldier.Shape);
+                    int side = Gripped.FindSide(GameObj.Transform, Soldier.Shape);
                     
-                    Rect grabbedShape = gripped.RectangularBody.LoopShape.AABB;
+                    Rect grabbedShape = Gripped.RectangularBody.LoopShape.AABB;
                     Rect soldierShape = Soldier.Shape.AABB;
                     
                     if ((side & (Grippable.LEFT | Grippable.RIGHT)) > 0)

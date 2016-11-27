@@ -14,6 +14,7 @@ using Duality.Components.Physics;
 using Duality.Editor;
 using System.Diagnostics;
 using Battleroom.Utilities;
+using MoreLinq;
 
 namespace Battleroom.AI.PathFinding
 {
@@ -50,14 +51,14 @@ namespace Battleroom.AI.PathFinding
                 var right = new PathVertexObstacle(obstacle.GetComponent<Obstacle>(), Grippable.RIGHT);
 
 
-                edges.Add(new PathEdge(top, left));
-                edges.Add(new PathEdge(left, top));
-                edges.Add(new PathEdge(top, right));
-                edges.Add(new PathEdge(right, top));
-                edges.Add(new PathEdge(bottom, left));
-                edges.Add(new PathEdge(left, bottom));
-                edges.Add(new PathEdge(bottom, right));
-                edges.Add(new PathEdge(right, bottom));
+                edges.Add(new PathEdge(top, left, PathType.CRAWL));
+                edges.Add(new PathEdge(left, top, PathType.CRAWL));
+                edges.Add(new PathEdge(top, right, PathType.CRAWL));
+                edges.Add(new PathEdge(right, top, PathType.CRAWL));
+                edges.Add(new PathEdge(bottom, left, PathType.CRAWL));
+                edges.Add(new PathEdge(left, bottom, PathType.CRAWL));
+                edges.Add(new PathEdge(bottom, right, PathType.CRAWL));
+                edges.Add(new PathEdge(right, bottom, PathType.CRAWL));
 
                 verticies.Add(top);
                 verticies.Add(bottom);
@@ -85,11 +86,7 @@ namespace Battleroom.AI.PathFinding
 
                         if (!hit)
                         {
-                            edges.Add(new PathEdge(vertex, otherVertex));
-                        }
-                        else
-                        {
-
+                            edges.Add(new PathEdge(vertex, otherVertex, PathType.JUMP));
                         }
                     }
                 }
@@ -99,9 +96,12 @@ namespace Battleroom.AI.PathFinding
             Graph.AddVerticesAndEdgeRange(edges);
         }
 
-        public IEnumerable<PathEdge> FindPath(PathVertex start, PathVertex end)
+        public IEnumerable<PathEdge> FindPath(Vector2 start, Vector2 end)
         {
-            Func<PathVertex, double> costEstimate = new Func<PathVertex, double>(v => v.EstimateCost(end));
+            var closestStart = Graph.Vertices.MinBy(v => (v.Position - start).Length);
+            var closestEnd = Graph.Vertices.MinBy(v => (v.Position - end).Length);
+
+            Func<PathVertex, double> costEstimate = new Func<PathVertex, double>(v => v.EstimateCost(closestEnd));
 
             AStarShortestPathAlgorithm<PathVertex, PathEdge> astar = new AStarShortestPathAlgorithm<PathVertex, PathEdge>(
                 Graph,
@@ -110,10 +110,10 @@ namespace Battleroom.AI.PathFinding
             
             var vis = new VertexPredecessorRecorderObserver<PathVertex, PathEdge>();
             vis.Attach(astar);
-            astar.Compute(start);
+            astar.Compute(closestStart);
 
             IEnumerable<PathEdge> path;
-            vis.TryGetPath(end, out path);
+            vis.TryGetPath(closestEnd, out path);
 
             return path;
         }
@@ -165,29 +165,6 @@ namespace Battleroom.AI.PathFinding
             }
 
             return true;
-        }
-
-        private bool LineIntersectsRectMk1(Vector2 start, Vector2 end, Rect rect)
-        {
-            // Completely outside.
-            if ((start.X <= rect.LeftX && end.X <= rect.LeftX) || (start.Y <= rect.TopY && end.Y <= rect.TopY) || (start.X >= rect.RightX && end.X >= rect.RightX) || (start.Y >= rect.BottomY && end.Y >= rect.BottomY))
-                return false;
-
-            float m = (end.Y - start.Y) / (end.X - start.X);
-
-            float y = m * (rect.LeftX - start.X) + start.Y;
-            if (y > rect.TopY && y < rect.BottomY) return true;
-
-            y = m * (rect.RightX - start.X) + start.Y;
-            if (y > rect.TopY && y < rect.BottomY) return true;
-
-            float x = (rect.TopY - start.Y) / m + start.X;
-            if (x > rect.LeftX && x < rect.RightX) return true;
-
-            x = (rect.BottomY - start.Y) / m + start.X;
-            if (x > rect.LeftX && x < rect.RightX) return true;
-
-            return false;
         }
     }
 }

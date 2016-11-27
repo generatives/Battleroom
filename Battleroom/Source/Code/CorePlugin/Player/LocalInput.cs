@@ -1,4 +1,5 @@
 ﻿using Battleroom.Tooling.Cmd;
+using Battleroom.Utilities;
 using Duality;
 using Duality.Components;
 using Duality.Resources;
@@ -12,7 +13,7 @@ namespace Battleroom
 {
     [RequiredComponent(typeof(SoldierMovement))]
     [RequiredComponent(typeof(BeamGun))]
-    public class LocalInput : Component, ICmpInitializable
+    public class LocalInput : InputProcessor, ICmpInitializable
     {
         internal SoldierMovement Movement
         {
@@ -30,8 +31,9 @@ namespace Battleroom
             }
         }
 
-        public void OnInit(InitContext context)
+        public override void OnInit(InitContext context)
         {
+            base.OnInit(context);
             if (context == InitContext.Activate)
             {
                 DualityApp.Keyboard.KeyDown += Keyboard_KeyDown;
@@ -79,24 +81,24 @@ namespace Battleroom
                     case Duality.Input.Key.Space:
                         if (Movement.Gripping == GripState.SHOULD_GRIP)
                         {
-                            Movement.Gripping = GripState.NO_GRIP;
+                            Movement.SetNoGrip();
                         }
                         else if (Movement.Gripping == GripState.GRIPPING)
                         {
                             if (!DualityApp.Keyboard.KeyPressed(Duality.Input.Key.ShiftLeft))
                             {
-                                Movement.Jump(MouseRelativeToTransform().Angle);
+                                Movement.Jump();
                             }
                         }
                         break;
                     case Duality.Input.Key.ShiftLeft:
                         if (Movement.Gripping == GripState.NO_GRIP)
                         {
-                            Movement.Gripping = GripState.SHOULD_GRIP;
+                            Movement.SetShouldGrip();
                         }
                         else if (Movement.Gripping == GripState.SHOULD_GRIP)
                         {
-                            Movement.Gripping = GripState.NO_GRIP;
+                            Movement.SetNoGrip();
                         }
                         break;
                     case Duality.Input.Key.Escape:
@@ -134,36 +136,16 @@ namespace Battleroom
                     case Duality.Input.Key.Space:
                         if (Movement.Gripping == GripState.NO_GRIP)
                         {
-                            Movement.Gripping = GripState.SHOULD_GRIP;
+                            Movement.SetShouldGrip();
                         }
                         break;
                 }
             }
         }
 
-        public void OnShutdown(ShutdownContext context)
+        public override void OnShutdown(ShutdownContext context)
         {
-        }
-
-        private Vector3 MouseInWorldCoord()
-        {
-            var camera = Scene.Current.FindComponent<Camera>();
-            if (camera != null)
-            {
-                Vector3 mouseWorldPos = camera.GetSpaceCoord(new Vector3(DualityApp.Mouse.Pos, GameObj.Transform.Pos.Z));
-                Vector2 direction = (mouseWorldPos - GameObj.Transform.Pos).Xy;
-                return mouseWorldPos;
-            }
-            else
-            {
-                throw new Exception("No camera");
-            }
-        }
-
-        private Vector2 MouseRelativeToTransform()
-        {
-            var mouseWorldPos = MouseInWorldCoord();
-            return (mouseWorldPos - GameObj.Transform.Pos).Xy;
+            base.OnShutdown(context);
         }
     }
 }

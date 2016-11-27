@@ -1,4 +1,5 @@
-﻿using Duality;
+﻿using Battleroom.Grip;
+using Duality;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,13 +15,15 @@ namespace Battleroom.AI.PathFinding
 
     public class PathVertex
     {
+        public Grippable Grip { get; private set; }
         public Vector2 Position { get; private set; }
         public VertexType Type { get; private set; }
 
-        public PathVertex(Vector2 position, VertexType type)
+        public PathVertex(Vector2 position, VertexType type, Grippable grip)
         {
             Position = position;
             Type = type;
+            Grip = grip;
         }
 
         public double EstimateCost(PathVertex end)

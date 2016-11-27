@@ -1,8 +1,8 @@
-[Core] Msg: Running DualityLauncher with flags: RunFromEditor
+[Core] Msg: Running DualityLauncher with flags: Debugging
 [Core] Msg: Using 'DefaultPluginLoader' to load plugins.
 [Core] Msg: Environment Info: 
               Current Directory: C:\Development\GameDevelopment\BattleroomGame\Battleroom
-              Command Line: "C:\Development\GameDevelopment\BattleroomGame\Battleroom\DualityLauncher.exe" editor
+              Command Line: "C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\..\..\DualityLauncher.exe" 
               Operating System: Microsoft Windows NT 6.2.9200.0 (Windows 8)
               64 Bit OS: True
               64 Bit Process: True
@@ -40,6 +40,7 @@
               Plugins\HelpAdvisor.editor.dll
               Plugins\Jurassic.dll
               Plugins\LogView.editor.dll
+              Plugins\MoreLinq.Portable.dll
               Plugins\NVorbis.dll
               Plugins\ObjectInspector.editor.dll
               Plugins\OpenALSoft32.dll
@@ -68,6 +69,7 @@
 [Core] Msg:   Assembly loaded: DualityPrimitives 2.0.0.0
 [Core] Msg:   Assembly loaded: FarseerDuality 4.0.3.0
 [Core] Msg:   Assembly loaded: Jurassic 2.1.0.0
+[Core] Msg:   Assembly loaded: MoreLinq.Portable 1.4.18916.0
 [Core] Msg:   Assembly loaded: NVorbis 0.7.5.0
 [Core] Msg:   Assembly loaded: QuickGraph.Graphviz 3.6.61114.0
 [Core] Msg: Initializing ISystemBackend...
@@ -103,8 +105,8 @@
 [Core] Msg:   DotNetFrameworkBackend.core...
 [Core] Msg:   GamePlugin.core...
 [Core] Msg: DualityApp initialized
-            Debug Mode: False
-            Command line arguments: editor
+            Debug Mode: True
+            Command line arguments: 
 [Core] Msg: Opening Window...
 [Core] Msg:   Window Specification: 
                 Buffers: 2
@@ -113,8 +115,8 @@
                 AccumFormat: 64 (16161616)
                 Depth: 24
                 Stencil: 8
-                VSync: On
-                SwapInterval: 1
+                VSync: Off
+                SwapInterval: 0
 [Core] Msg:   OpenGL Version: 4.3.0 - Build 20.19.15.4531
               Vendor: Intel
               Renderer: Intel(R) HD Graphics 4600
@@ -127,7 +129,6 @@
 [Core] Msg:   ...done!
 [Core] Msg: Assembly loaded: FarseerDuality 4.1.1.0
 [Core] Msg: Loading Resource 'Data\Scene.Scene.res'
-[Core] Msg:   Loading Resource 'Data\Player.Prefab.res'
 [Core] Msg:   Loading Resource 'Data\Boundary.Prefab.res'
 [Core] Msg:   Loading Resource 'Data\Camera.Prefab.res'
 [Core] Msg: Shutting down OpenGL 2.1 (OpenTK)...

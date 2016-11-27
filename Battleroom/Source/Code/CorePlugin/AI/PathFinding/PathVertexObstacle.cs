@@ -16,7 +16,8 @@ namespace Battleroom.AI.PathFinding
         public Obstacle Obstacle { get; private set; }
         public int Side { get; private set; }
 
-        public PathVertexObstacle(Obstacle obstacle, int side) : base(GetPosition(obstacle, side), VertexType.OBSTACLE)
+        public PathVertexObstacle(Obstacle obstacle, int side) :
+            base(GetPosition(obstacle, side), VertexType.OBSTACLE, obstacle.GameObj.GetComponent<Grippable>())
         {
             Obstacle = obstacle;
             Side = side;
@@ -29,19 +30,19 @@ namespace Battleroom.AI.PathFinding
 
             if((side & Grippable.TOP) > 0)
             {
-                return new Vector2(transform.Pos.X, transform.Pos.Y - rect.Height / 2 - 5);
+                return new Vector2(transform.Pos.X, transform.Pos.Y - rect.Height / 2 - 20);
             }
             else if((side & Grippable.BOTTOM) > 0)
             {
-                return new Vector2(transform.Pos.X, transform.Pos.Y + rect.Height / 2 + 5);
+                return new Vector2(transform.Pos.X, transform.Pos.Y + rect.Height / 2 + 20);
             }
             else if ((side & Grippable.LEFT) > 0)
             {
-                return new Vector2(transform.Pos.X - rect.Height / 2 - 5, transform.Pos.Y);
+                return new Vector2(transform.Pos.X - rect.Height / 2 - 20, transform.Pos.Y);
             }
             else if ((side & Grippable.RIGHT) > 0)
             {
-                return new Vector2(transform.Pos.X + rect.Height / 2 + 5, transform.Pos.Y);
+                return new Vector2(transform.Pos.X + rect.Height / 2 + 20, transform.Pos.Y);
             }
             else
             {

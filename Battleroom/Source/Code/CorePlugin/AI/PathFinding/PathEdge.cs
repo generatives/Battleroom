@@ -8,8 +8,15 @@ using System.Threading.Tasks;
 
 namespace Battleroom.AI.PathFinding
 {
+    public enum PathType
+    {
+        CRAWL, JUMP
+    }
+
     public class PathEdge : Edge<PathVertex>
     {
+        public PathType Type { get; private set; }
+
         public float Length { get; private set; }
 
         public double Cost
@@ -20,9 +27,10 @@ namespace Battleroom.AI.PathFinding
             }
         }
 
-        public PathEdge(PathVertex first, PathVertex second) : base(first, second)
+        public PathEdge(PathVertex first, PathVertex second, PathType type) : base(first, second)
         {
             Length = (first.Position - second.Position).Length;
+            Type = type;
         }
     }
 }
