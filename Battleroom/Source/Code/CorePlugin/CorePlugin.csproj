@@ -55,10 +55,19 @@
     <Reference Include="DualityPrimitives">
       <HintPath>..\..\..\DualityPrimitives.dll</HintPath>
     </Reference>
+    <Reference Include="Sockets.Plugin, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Sockets.Plugin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sockets.Plugin.Abstractions, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\rda.SocketsForPCL.2.0.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Sockets.Plugin.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CommandComponent.cs" />
     <Compile Include="Graphics\UserInterface.cs" />
+    <Compile Include="Networking\NetworkManager.cs" />
     <Compile Include="Room\Boundary.cs" />
     <Compile Include="Soldier\BeamGun.cs" />
     <Compile Include="Tooling\Cmd\CmdOverlay.cs" />
@@ -80,6 +89,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <PropertyGroup>

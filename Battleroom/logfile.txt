@@ -1,13 +1,13 @@
 [Core] Msg: Running DualityLauncher with flags: Debugging
 [Core] Msg: Using 'DefaultPluginLoader' to load plugins.
 [Core] Msg: Environment Info: 
-              Current Directory: C:\Development\GameDevelopment\BattleroomGame\Battleroom
-              Command Line: "C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\..\..\DualityLauncher.exe" 
+              Current Directory: C:\Users\QUINN-LAPTOP\Documents\SourceTree\Battleroom\Battleroom
+              Command Line: "C:\Users\QUINN-LAPTOP\Documents\SourceTree\Battleroom\Battleroom\Source\Code\..\..\DualityLauncher.exe" 
               Operating System: Microsoft Windows NT 6.2.9200.0 (Windows 8)
               64 Bit OS: True
               64 Bit Process: True
               CLR Version: 4.0.30319.42000
-              Processor Count: 8
+              Processor Count: 4
 [Core] Msg: Currently Loaded Assemblies:
               mscorlib 4.0.0.0
               DualityLauncher 2.2.0.0
@@ -82,14 +82,13 @@
                   EnableHighResolution: True
 [Core] Msg: Initializing IAudioBackend...
 [Core] Msg:   OpenAL (OpenTK)...
-[Core] Msg:     OpenAL Drivers installed in C:\WINDOWS\system32\OpenAL32.dll
+[Core] Msg:     OpenAL Drivers not found. Using 64 Bit software fallback.
 [Core] Msg:     Available devices:
-                  Generic Software on Speakers (Realtek High Definition Audio) (Default)
-                  Generic Software on Realtek Digital Output (Realtek High Definition Audio)
-[Core] Msg:     Current device: Generic Software
-[Core] Msg:     OpenAL Version: 1.1
-                Vendor: Creative Labs Inc.
-                Renderer: Software
+                  Speakers (High Definition Audio Device) (Default)
+[Core] Msg:     Current device: OpenAL Soft
+[Core] Msg:     OpenAL Version: 1.1 ALSOFT 1.15.1
+                Vendor: OpenAL Community
+                Renderer: OpenAL Soft
                 Effects: True
 [Core] Msg:     256 sources available
 [Core] Msg: Initializing core plugins...
@@ -104,17 +103,17 @@
 [Core] Msg: Opening Window...
 [Core] Msg:   Window Specification: 
                 Buffers: 2
-                Samples: 8
+                Samples: 4
                 ColorFormat: 32 (8888)
-                AccumFormat: 64 (16161616)
+                AccumFormat: 0 (0000)
                 Depth: 24
                 Stencil: 8
                 VSync: Off
                 SwapInterval: 0
-[Core] Msg:   OpenGL Version: 4.3.0 - Build 20.19.15.4531
-              Vendor: Intel
-              Renderer: Intel(R) HD Graphics 4600
-              Shader Version: 4.30 - Build 20.19.15.4531
+[Core] Msg:   OpenGL Version: 4.5.13399 Compatibility Profile Context 15.201.1151.1008
+              Vendor: ATI Technologies Inc.
+              Renderer: AMD Mobility Radeon HD 5000 Series
+              Shader Version: 4.40
 [Core] Msg: Initializing default content...
 [Core] Msg:   Assembly loaded: System.Runtime.InteropServices 4.0.0.0
 [Core] Msg:   Assembly loaded: System.Collections.Concurrent 4.0.0.0
@@ -123,9 +122,7 @@
 [Core] Msg:   ...done!
 [Core] Msg: Assembly loaded: FarseerDuality 4.1.1.0
 [Core] Msg: Loading Resource 'Data\Scene.Scene.res'
-[Core] Msg: Shutting down OpenGL 2.1 (OpenTK)...
-[Core] Msg: Shutting down OpenAL (OpenTK)...
-[Core] Wrn: Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
-[Core] Wrn: Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
-[Core] Msg: Shutting down .Net Framework...
-[Core] Msg: DualityApp terminated
+[Core] Msg:   Loading Resource 'Data\Player.Prefab.res'
+[Core] Msg:   Loading Resource 'Data\Enemy.Prefab.res'
+[Core] Msg: Assembly loaded: Microsoft.VisualStudio.Debugger.Runtime 14.0.0.0
+[Core] Msg: Assembly loaded: System.Configuration 4.0.0.0

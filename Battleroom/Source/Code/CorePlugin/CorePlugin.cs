@@ -5,6 +5,7 @@ using System.Text;
 
 using Duality;
 using Battleroom.Tooling.Cmd;
+using Battleroom.Networking;
 
 namespace Battleroom
 {
@@ -14,12 +15,14 @@ namespace Battleroom
 	public class BattleroomCorePlugin : CorePlugin
 	{
         private CmdOverlay cmdOverlay;
+        private NetworkManager netManager;
 
         protected override void InitPlugin()
         {
             base.InitPlugin();
 
             cmdOverlay = new CmdOverlay();
+            netManager = new NetworkManager();
         }
 
         protected override void OnBeforeUpdate()
