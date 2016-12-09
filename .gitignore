@@ -7,3 +7,8 @@ Battleroom/Source/Code/EditorPlugin/obj
 !Battleroom/Plugins/*.pdb
 !Battleroom/Plugins/*.dll
 !Battleroom/Plugins/*.xml
+Battleroom/logfile.txt
+Battleroom/logfile_editor.txt
+Battleroom/logfile_editor_prev.txt
+Battleroom/perflog.txt
+Battleroom/perflog_editor.txt
