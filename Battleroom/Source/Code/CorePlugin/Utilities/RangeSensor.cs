@@ -39,12 +39,12 @@ namespace Battleroom
         private int ActiveCollisions { get; set; }
         private ShapeInfo SensorShape { get; set; }
 
-        private HashSet<ShapeInfo> shapesWithinRange;
-        internal IEnumerable<ShapeInfo> ShapesWithinRange
+        private HashSet<GameObject> objectsInRange;
+        internal IEnumerable<GameObject> ObjectsInRange
         {
             get
             {
-                return shapesWithinRange.AsEnumerable();
+                return objectsInRange.AsEnumerable();
             }
         }
 
@@ -76,7 +76,7 @@ namespace Battleroom
                 var rargs = args as RigidBodyCollisionEventArgs;
                 if (rargs.MyShape == SensorShape)
                 {
-                    shapesWithinRange.Add(rargs.OtherShape);
+                    objectsInRange.Add(rargs.OtherShape.Parent.GameObj);
                     ActiveCollisions++;
                     WithinRange = true;
                 }
@@ -90,7 +90,7 @@ namespace Battleroom
                 var rargs = args as RigidBodyCollisionEventArgs;
                 if (rargs.MyShape == SensorShape)
                 {
-                    shapesWithinRange.Remove(rargs.OtherShape);
+                    objectsInRange.Remove(rargs.OtherShape.Parent.GameObj);
                     ActiveCollisions--;
                     if (ActiveCollisions == 0)
                     {
@@ -108,7 +108,7 @@ namespace Battleroom
         {
             if (context == InitContext.Activate)
             {
-                shapesWithinRange = new HashSet<ShapeInfo>();
+                objectsInRange = new HashSet<GameObject>();
                 UpdateSensorShape();
             }
         }

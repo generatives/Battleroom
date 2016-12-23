@@ -131,6 +131,14 @@
 [Core] Msg: Loading Resource 'Data\Scene.Scene.res'
 [Core] Msg:   Loading Resource 'Data\Boundary.Prefab.res'
 [Core] Msg:   Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:     Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:       ...succeeded! Assigning value '0'
+[Core] Wrn:     Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:       ...succeeded! Assigning value '0'
+[Core] Wrn:     Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:       ...succeeded! Assigning value '0'
+[Core] Wrn:     Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:       ...succeeded! Assigning value '0'
 [Core] Msg: Shutting down OpenGL 2.1 (OpenTK)...
 [Core] Msg: Shutting down OpenAL (OpenTK)...
 [Core] Wrn: Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().

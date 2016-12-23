@@ -67,16 +67,16 @@ namespace Battleroom
                 switch (e.Key)
                 {
                     case Duality.Input.Key.A:
-                        Movement.CrawlLeft = false;
+                        Movement.CrawlLeft = 0;
                         break;
                     case Duality.Input.Key.S:
-                        Movement.CrawlDown = false;
+                        Movement.CrawlDown = 0;
                         break;
                     case Duality.Input.Key.D:
-                        Movement.CrawlRight = false;
+                        Movement.CrawlRight = 0;
                         break;
                     case Duality.Input.Key.W:
-                        Movement.CrawlUp = false;
+                        Movement.CrawlUp = 0;
                         break;
                     case Duality.Input.Key.Space:
                         if (Movement.Gripping == GripState.SHOULD_GRIP)
@@ -122,16 +122,16 @@ namespace Battleroom
                 switch (e.Key)
                 {
                     case Duality.Input.Key.A:
-                        Movement.CrawlLeft = true;
+                        Movement.CrawlLeft = Movement.MaxCrawlingSpeed;
                         break;
                     case Duality.Input.Key.S:
-                        Movement.CrawlDown = true;
+                        Movement.CrawlDown = Movement.MaxCrawlingSpeed;
                         break;
                     case Duality.Input.Key.D:
-                        Movement.CrawlRight = true;
+                        Movement.CrawlRight = Movement.MaxCrawlingSpeed;
                         break;
                     case Duality.Input.Key.W:
-                        Movement.CrawlUp = true;
+                        Movement.CrawlUp = Movement.MaxCrawlingSpeed;
                         break;
                     case Duality.Input.Key.Space:
                         if (Movement.Gripping == GripState.NO_GRIP)

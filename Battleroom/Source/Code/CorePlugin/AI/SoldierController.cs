@@ -1,4 +1,5 @@
 ﻿using Battleroom.AI.PathFinding;
+using Battleroom.Grip;
 using Duality;
 using Duality.Resources;
 using System;
@@ -10,20 +11,18 @@ using System.Threading.Tasks;
 
 namespace Battleroom.AI
 {
-    public enum PathingState
+    public enum SoldierAIState
     {
-        NOT_PATHING,
+        IDLE,
+        CRAWLING_TO_PATH,
+        CRAWLING_ALONG_EDGE,
         ON_VERTEX,
-        CRAWLING_TO_SOURCE_VERTEX,
-        CRAWLING_TO_TARGET_VERTEX,
-        JUMPING_TO_VERTEX,
-        OFF_PATH,
-        FINISHED_PATH
+        JUMPING_ALONG_EDGE
     }
 
     [RequiredComponent(typeof(SoldierMovement))]
     [RequiredComponent(typeof(RangeSensor))]
-    public class SoldierController : Component, ICmpUpdatable
+    public class SoldierController : Component, ICmpUpdatable, ICmpInitializable
     {
         internal PathFinder PathFinder
         {
@@ -51,102 +50,191 @@ namespace Battleroom.AI
 
         internal IEnumerable<PathEdge> RemainingPath { get; private set; }
         internal PathEdge CurrentEdge { get; private set; }
-        internal PathingState PathingState { get; private set; }
+        internal SoldierAIState State
+        {
+            get
+            {
+                if(StateStack.Count > 0)
+                {
+                    return StateStack.Peek();
+                }
+                else
+                {
+                    return SoldierAIState.IDLE;
+                }
+            }
+        }
+        private Stack<SoldierAIState> StateStack { get; set; }
+        GameObject jumpedOff;
 
         public void GoTo(Vector2 position)
         {
             var path = PathFinder.FindPath(GameObj.Transform.Pos.Xy, position);
-            CurrentEdge = path.FirstOrDefault();
-            RemainingPath = path.Skip(1);
+            if(path != null)
+            {
+                CurrentEdge = path.FirstOrDefault();
+                RemainingPath = path.Skip(1);
+                SwitchStateTo(SoldierAIState.CRAWLING_TO_PATH);
+            }
+            else
+            {
+                CurrentEdge = null;
+                RemainingPath = null;
+            }
         }
 
         public void OnUpdate()
         {
-            AccessPathingState();
-
-            if (RangeSensor.WithinRange && SoldierMovement.Gripping == GripState.NO_GRIP)
+            Vector2 edgeEnd = Vector2.Zero;
+            if (CurrentEdge != null)
             {
-                SoldierMovement.SetShouldGrip();
+                edgeEnd = CurrentEdge.Target.Position;
             }
-
-            if(!RangeSensor.WithinRange && PathingState == PathingState.JUMPING_TO_VERTEX)
+            var current = GameObj.Transform.Pos.Xy;
+            if (StateStack.Count > 0)
             {
-                SoldierMovement.SetShouldGrip();
-            }
+                switch (State)
+                {
+                    case SoldierAIState.IDLE:
+                        SoldierMovement.SetShouldGrip();
+                        break;
+                    case SoldierAIState.CRAWLING_TO_PATH:
+                        SoldierMovement.SetShouldGrip();
+                        var pathStart = CurrentEdge.Source.Position;
+                        CrawlTo(current, pathStart);
 
-            switch (PathingState)
-            {
-                case PathingState.CRAWLING_TO_SOURCE_VERTEX:
-                    {
-                        var dest = CurrentEdge.Source.Position;
-                        var current = GameObj.Transform.Pos.Xy;
-                        SoldierMovement.CrawlUp = dest.Y < current.Y;
-                        SoldierMovement.CrawlDown = dest.Y > current.Y;
-                        SoldierMovement.CrawlLeft = dest.X < current.X;
-                        SoldierMovement.CrawlRight = dest.X > current.X;
-                    }
-                    break;
-                case PathingState.CRAWLING_TO_TARGET_VERTEX:
-                    {
-                        var dest = CurrentEdge.Target.Position;
-                        var current = GameObj.Transform.Pos.Xy;
-                        SoldierMovement.CrawlUp = dest.Y < current.Y;
-                        SoldierMovement.CrawlDown = dest.Y > current.Y;
-                        SoldierMovement.CrawlLeft = dest.X < current.X;
-                        SoldierMovement.CrawlRight = dest.X > current.X;
-                    }
-                    break;
-                case PathingState.ON_VERTEX:
-                    {
-                        if(CurrentEdge.Type == PathType.CRAWL)
+                        if (OnVertex(pathStart))
                         {
-                            PathingState = PathingState.CRAWLING_TO_TARGET_VERTEX;
+                            SwitchStateTo(SoldierAIState.ON_VERTEX);
+                            StopCrawling();
+                        }
+                        break;
+                    case SoldierAIState.ON_VERTEX:
+                        SoldierMovement.SetShouldGrip();
+                        StopCrawling();
+                        if (CurrentEdge == null)
+                        {
+                            SwitchStateTo(SoldierAIState.IDLE);
                         }
                         else
                         {
-                            var dest = CurrentEdge.Target.Position;
-                            var current = GameObj.Transform.Pos.Xy;
-                            var angle = Vector2.AngleBetween(dest, current);
-
-                            if (Math.Abs(angle - GameObj.Transform.Angle) < 0.01)
+                            if (CurrentEdge.Type == PathType.CRAWL)
                             {
-                                SoldierMovement.Jump();
-                                PathingState = PathingState.JUMPING_TO_VERTEX;
+                                SwitchStateTo(SoldierAIState.CRAWLING_ALONG_EDGE);
                             }
                             else
                             {
-                                SoldierMovement.FacingAngle = Vector2.AngleBetween(dest, current);
+                                var angle = (edgeEnd - current).Angle;
+                                if (Math.Abs(angle - GameObj.Transform.Angle) < 0.01)
+                                {
+                                    SoldierMovement.Jump();
+                                    jumpedOff = SoldierMovement.Gripped.GameObj;
+                                    SwitchStateTo(SoldierAIState.JUMPING_ALONG_EDGE);
+                                }
+                                else
+                                {
+                                    SoldierMovement.FacingAngle = angle;
+                                }
                             }
                         }
-                    }
-                    break;
+                        break;
+                    case SoldierAIState.CRAWLING_ALONG_EDGE:
+                        SoldierMovement.SetShouldGrip();
+                        if (OnVertex(edgeEnd))
+                        {
+                            CurrentEdge = RemainingPath.FirstOrDefault();
+                            RemainingPath = RemainingPath.Skip(1);
+                            SwitchStateTo(SoldierAIState.ON_VERTEX);
+                            StopCrawling();
+                        }
+                        else
+                        {
+                            CrawlTo(current, edgeEnd);
+                        }
+                        break;
+
+                    case SoldierAIState.JUMPING_ALONG_EDGE:
+                        if(RangeSensor.WithinRange && !RangeSensor.ObjectsInRange.Any(o => jumpedOff == o))
+                        {
+                            SoldierMovement.SetShouldGrip();
+                        }
+
+                        if (SoldierMovement.Gripping == GripState.GRIPPING)
+                        {
+                            if (OnVertex(edgeEnd))
+                            {
+                                CurrentEdge = RemainingPath.FirstOrDefault();
+                                RemainingPath = RemainingPath.Skip(1);
+                                SwitchStateTo(SoldierAIState.ON_VERTEX);
+                            }
+                            else
+                            {
+                                SwitchStateTo(SoldierAIState.CRAWLING_ALONG_EDGE);
+                            }
+                        }
+                        break;
+                }
             }
         }
 
-        private void AccessPathingState()
+        private void SwitchStateTo(SoldierAIState state)
         {
-            if(CurrentEdge == null)
+            StateStack.Pop();
+            StateStack.Push(state);
+        }
+
+        private void StopCrawling()
+        {
+            SoldierMovement.CrawlUp = 0;
+            SoldierMovement.CrawlDown = 0;
+            SoldierMovement.CrawlLeft = 0;
+            SoldierMovement.CrawlRight = 0;
+        }
+
+        private void CrawlTo(Vector2 current, Vector2 dest)
+        {
+            SoldierMovement.CrawlUp = (float)Math.Max(Math.Pow(Math.Max(current.Y - dest.Y, 0), 1.5) / 50, 5);
+            SoldierMovement.CrawlDown = (float)Math.Max(Math.Pow(Math.Max(dest.Y - current.Y, 0), 1.5) / 50, 5);
+            SoldierMovement.CrawlLeft = (float)Math.Max(Math.Pow(Math.Max(current.X - dest.X, 0), 1.5) / 50, 5);
+            SoldierMovement.CrawlRight = (float)Math.Max(Math.Pow(Math.Max(dest.X - current.X, 0), 1.5) / 50, 5);
+        }
+
+        private bool OnVertex(Vector2 dest)
+        {
+            int side = SoldierMovement.Gripped.FindSide(GameObj.Transform, SoldierMovement.Soldier.Shape);
+
+            bool leftRight = (side & (Grippable.LEFT | Grippable.RIGHT)) > 0;
+            bool topBottom = (side & (Grippable.TOP | Grippable.BOTTOM)) > 0;
+
+            if(topBottom && leftRight)
             {
-                PathingState = PathingState.NOT_PATHING;
+                return Math.Abs(GameObj.Transform.Pos.Y - dest.Y) < 1 && Math.Abs(GameObj.Transform.Pos.X - dest.X) < 1;
+            }
+            else if(leftRight)
+            {
+                return Math.Abs(GameObj.Transform.Pos.Y - dest.Y) < 1;
+            }
+            else if(topBottom)
+            {
+                return Math.Abs(GameObj.Transform.Pos.X - dest.X) < 1;
             }
             else
             {
-                if(PathingState != PathingState.JUMPING_TO_VERTEX && PathingState != PathingState.CRAWLING_TO_TARGET_VERTEX)
-                {
-                    var pathStartVertex = CurrentEdge.Source.Position;
-                    if ((GameObj.Transform.Pos.Xy - pathStartVertex).Length < 30)
-                    {
-                        PathingState = PathingState.ON_VERTEX;
-                    }
-                    else
-                    {
-                        if (CurrentEdge.Source.Grip == SoldierMovement.Gripped)
-                        {
-                            PathingState = PathingState.CRAWLING_TO_SOURCE_VERTEX;
-                        }
-                    }
-                }
+                return false;
             }
+        }
+
+        public void OnInit(InitContext context)
+        {
+            if (context == InitContext.Activate)
+            {
+                StateStack = new Stack<SoldierAIState>();
+                StateStack.Push(SoldierAIState.IDLE);
+            }
+        }
+
+        public void OnShutdown(ShutdownContext context)
+        {
         }
     }
 }

@@ -82,7 +82,7 @@ namespace Battleroom.Grip
         {
             if(ShouldGrip &&
                 Range.WithinRange &&
-                Range.ShapesWithinRange.Any(s => s.Parent.GameObj.GetComponent<Grippable>() != null))
+                Range.ObjectsInRange.Any(s => s.GetComponent<Grippable>() != null))
             {
                 IsGripping = true;
             }

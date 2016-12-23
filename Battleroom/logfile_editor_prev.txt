@@ -51,6 +51,7 @@
               Plugins\HelpAdvisor.editor.dll
               Plugins\Jurassic.dll
               Plugins\LogView.editor.dll
+              Plugins\MoreLinq.Portable.dll
               Plugins\NVorbis.dll
               Plugins\ObjectInspector.editor.dll
               Plugins\OpenALSoft32.dll
@@ -78,6 +79,7 @@
 [Core] Msg:   Assembly loaded: DualityPrimitives 2.0.0.0
 [Core] Msg:   Assembly loaded: FarseerDuality 4.0.3.0
 [Core] Msg:   Assembly loaded: Jurassic 2.1.0.0
+[Core] Msg:   Assembly loaded: MoreLinq.Portable 1.4.18916.0
 [Core] Msg:   Assembly loaded: NVorbis 0.7.5.0
 [Core] Msg:   Assembly loaded: QuickGraph.Graphviz 3.6.61114.0
 [Core] Msg: Initializing ISystemBackend...
@@ -168,7 +170,6 @@
 [Edit] Msg:   SceneView.editor...
 [Core] Msg: Assembly loaded: FarseerDuality 4.1.1.0
 [Core] Msg: Loading Resource 'Data\Scene.Scene.res'
-[Core] Msg:   Loading Resource 'Data\Player.Prefab.res'
 [Core] Msg:   Loading Resource 'Data\Boundary.Prefab.res'
 [Core] Msg:   Loading Resource 'Data\Camera.Prefab.res'
 [Edit] Msg: Saving user data...

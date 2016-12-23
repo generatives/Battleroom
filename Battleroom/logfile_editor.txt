@@ -51,6 +51,7 @@
               Plugins\HelpAdvisor.editor.dll
               Plugins\Jurassic.dll
               Plugins\LogView.editor.dll
+              Plugins\MoreLinq.Portable.dll
               Plugins\NVorbis.dll
               Plugins\ObjectInspector.editor.dll
               Plugins\OpenALSoft32.dll
@@ -78,6 +79,7 @@
 [Core] Msg:   Assembly loaded: DualityPrimitives 2.0.0.0
 [Core] Msg:   Assembly loaded: FarseerDuality 4.0.3.0
 [Core] Msg:   Assembly loaded: Jurassic 2.1.0.0
+[Core] Msg:   Assembly loaded: MoreLinq.Portable 1.4.18916.0
 [Core] Msg:   Assembly loaded: NVorbis 0.7.5.0
 [Core] Msg:   Assembly loaded: QuickGraph.Graphviz 3.6.61114.0
 [Core] Msg: Initializing ISystemBackend...
@@ -167,17 +169,237 @@
 [Edit] Msg:   ProjectView.editor...
 [Edit] Msg:   SceneView.editor...
 [Core] Msg: Assembly loaded: FarseerDuality 4.1.1.0
-[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
-[Core] Msg:   Loading Resource 'Data\Player.Prefab.res'
-[Core] Msg:   Loading Resource 'Data\Boundary.Prefab.res'
-[Core] Msg:   Loading Resource 'Data\Camera.Prefab.res'
 [Core] Msg: Assembly loaded: Windows7.DesktopIntegration 1.0.0.0
 [Edit] Msg: Saving data...
 [Edit] Msg: Reloading core plugins...
 [Edit] Msg:   Plugins\GamePlugin.core.dll...
 [Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
 [Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Msg:   Loading Resource 'Data\Boundary.Prefab.res'
+[Core] Msg:   Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:     Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:       ...succeeded! Assigning value '0'
+[Core] Wrn:     Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:       ...succeeded! Assigning value '0'
+[Core] Wrn:     Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:       ...succeeded! Assigning value '0'
+[Core] Wrn:     Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:       ...succeeded! Assigning value '0'
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
 [Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] ERR:     An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+                CallStack:
+                   at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                   at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                   at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                   at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
+[Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] ERR:     An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+                CallStack:
+                   at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                   at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                   at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                   at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
+[Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] ERR:     An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+                CallStack:
+                   at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                   at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                   at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                   at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
+[Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] ERR:     An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+                CallStack:
+                   at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                   at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                   at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                   at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
+[Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] ERR:     An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+                CallStack:
+                   at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                   at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                   at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                   at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
+[Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
 [Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
               CallStack:
                  at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
@@ -190,6 +412,90 @@
 [Edit] Msg: Restoring data...
 [Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
 [Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] ERR:     An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+                CallStack:
+                   at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                   at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                   at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                   at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
+[Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] ERR:     An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+                CallStack:
+                   at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                   at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                   at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                   at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
+[Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
 [Edit] Msg: Saving data...
 [Edit] Msg: Reloading core plugins...
 [Edit] Msg:   Plugins\GamePlugin.core.dll...
@@ -226,6 +532,14 @@
 [Edit] Msg: Restoring data...
 [Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
 [Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
 [Edit] Msg: Saving data...
 [Edit] Msg: Reloading core plugins...
 [Edit] Msg:   Plugins\GamePlugin.core.dll...
@@ -256,6 +570,14 @@
 [Edit] Msg: Restoring data...
 [Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
 [Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
 [Edit] Msg: Saving data...
 [Edit] Msg: Reloading core plugins...
 [Edit] Msg:   Plugins\GamePlugin.core.dll...
@@ -286,42 +608,14 @@
 [Edit] Msg: Restoring data...
 [Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
 [Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
-[Edit] Msg: Saving data...
-[Edit] Msg: Reloading core plugins...
-[Edit] Msg:   Plugins\GamePlugin.core.dll...
-[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
-[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
-[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
-[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-              CallStack:
-                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-              CallStack:
-                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-              CallStack:
-                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] Msg: Initializing reloaded core plugins...
-[Edit] Msg:   GamePlugin.core...
-[Edit] ERR:     An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-                CallStack:
-                   at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                   at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                   at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                   at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
-[Edit] Msg: Restoring data...
-[Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
-[Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
 [Edit] Msg: Saving data...
 [Edit] Msg: Reloading core plugins...
 [Edit] Msg:   Plugins\GamePlugin.core.dll...
@@ -352,42 +646,14 @@
 [Edit] Msg: Restoring data...
 [Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
 [Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
-[Edit] Msg: Saving data...
-[Edit] Msg: Reloading core plugins...
-[Edit] Msg:   Plugins\GamePlugin.core.dll...
-[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
-[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
-[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
-[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-              CallStack:
-                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-              CallStack:
-                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-              CallStack:
-                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] Msg: Initializing reloaded core plugins...
-[Edit] Msg:   GamePlugin.core...
-[Edit] ERR:     An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-                CallStack:
-                   at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                   at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                   at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                   at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
-[Edit] Msg: Restoring data...
-[Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
-[Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
 [Edit] Msg: Saving data...
 [Edit] Msg: Reloading core plugins...
 [Edit] Msg:   Plugins\GamePlugin.core.dll...
@@ -424,108 +690,14 @@
 [Edit] Msg: Restoring data...
 [Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
 [Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
-[Edit] Msg: Saving data...
-[Edit] Msg: Reloading core plugins...
-[Edit] Msg:   Plugins\GamePlugin.core.dll...
-[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
-[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
-[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
-[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-              CallStack:
-                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-              CallStack:
-                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] Msg: Initializing reloaded core plugins...
-[Edit] Msg:   GamePlugin.core...
-[Edit] ERR:     An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-                CallStack:
-                   at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                   at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                   at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                   at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
-[Edit] Msg: Restoring data...
-[Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
-[Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
-[Edit] Msg: Saving data...
-[Edit] Msg: Reloading core plugins...
-[Edit] Msg:   Plugins\GamePlugin.core.dll...
-[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
-[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
-[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
-[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-              CallStack:
-                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-              CallStack:
-                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] Msg: Initializing reloaded core plugins...
-[Edit] Msg:   GamePlugin.core...
-[Edit] ERR:     An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-                CallStack:
-                   at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                   at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                   at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                   at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
-[Edit] Msg: Restoring data...
-[Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
-[Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
-[Edit] Msg: Saving data...
-[Edit] Msg: Reloading core plugins...
-[Edit] Msg:   Plugins\GamePlugin.core.dll...
-[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
-[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
-[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
-[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-              CallStack:
-                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-              CallStack:
-                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-              CallStack:
-                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-              CallStack:
-                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] Msg: Initializing reloaded core plugins...
-[Edit] Msg:   GamePlugin.core...
-[Edit] ERR:     An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
-                CallStack:
-                   at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
-                   at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
-                   at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
-                   at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
-[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
-[Edit] Msg: Restoring data...
-[Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
-[Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
 [Edit] Msg: Saving data...
 [Edit] Msg: Reloading core plugins...
 [Edit] Msg:   Plugins\GamePlugin.core.dll...
@@ -562,6 +734,14 @@
 [Edit] Msg: Restoring data...
 [Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
 [Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
 [Edit] Msg: Saving data...
 [Edit] Msg: Reloading core plugins...
 [Edit] Msg:   Plugins\GamePlugin.core.dll...
@@ -592,6 +772,14 @@
 [Edit] Msg: Restoring data...
 [Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
 [Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
 [Edit] Msg: Saving data...
 [Edit] Msg: Reloading core plugins...
 [Edit] Msg:   Plugins\GamePlugin.core.dll...
@@ -618,6 +806,40 @@
                  at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
 [Edit] Msg: Initializing reloaded core plugins...
 [Edit] Msg:   GamePlugin.core...
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
+[Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Core] Msg: Loading Resource 'Data\Scene.Scene.res'
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
 [Edit] ERR:     An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
                 CallStack:
                    at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
@@ -628,3 +850,209 @@
 [Edit] Msg: Restoring data...
 [Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
 [Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 38
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 38
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] ERR:     An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+                CallStack:
+                   at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 38
+                   at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                   at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                   at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
+[Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] ERR:     An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+                CallStack:
+                   at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                   at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                   at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                   at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
+[Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] ERR:     An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+                CallStack:
+                   at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                   at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                   at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                   at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
+[Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] ERR:     An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+                CallStack:
+                   at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                   at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                   at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                   at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
+[Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Edit] Msg: Saving data...
+[Edit] Msg: Reloading core plugins...
+[Edit] Msg:   Plugins\GamePlugin.core.dll...
+[Core] Msg:     Assembly loaded: GamePlugin.core 1.0.0.0
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn:     Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] ERR:   An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+              CallStack:
+                 at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                 at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                 at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                 at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg: Initializing reloaded core plugins...
+[Edit] Msg:   GamePlugin.core...
+[Edit] ERR:     An error occurred during a core update: NullReferenceException: Object reference not set to an instance of an object.
+                CallStack:
+                   at Battleroom.BattleroomCorePlugin.OnBeforeUpdate() in C:\Development\GameDevelopment\BattleroomGame\Battleroom\Source\Code\CorePlugin\CorePlugin.cs:line 37
+                   at Duality.CorePluginManager.InvokeBeforeUpdate() in c:\projects\duality\Duality\CorePluginManager.cs:line 115
+                   at Duality.DualityApp.EditorUpdate(IEnumerable`1 updateObjects, Boolean freezeScene, Boolean forceFixedStep) in c:\projects\duality\Duality\DualityApp.cs:line 543
+                   at Duality.Editor.DualityEditorApp.Application_Idle(Object sender, EventArgs e) in c:\projects\duality\DualityEditor\DualityEditorApp.cs:line 1278
+[Edit] Msg:     Analyzing Core Plugin: GamePlugin.core
+[Edit] Msg: Restoring data...
+[Core] Msg: Loading Resource 'Data\Boundary.Prefab.res'
+[Core] Msg: Loading Resource 'Data\Camera.Prefab.res'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlDown>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlLeft>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlRight>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Core] Wrn:   Actual Type 'Boolean' of object value in field '<CrawlUp>k__BackingField' does not match reflected FieldType 'Single'. Trying to convert...'
+[Core] Msg:     ...succeeded! Assigning value '0'
+[Edit] Msg: Saving user data...
+[Core] Msg: Shutting down GLControl (OpenTK)...
+[Core] Msg: Shutting down OpenGL 2.1 (OpenTK)...
+[Core] Msg: Shutting down OpenAL (OpenTK)...
+[Core] Wrn: Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Keyboard. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Wrn: Found leaked event bindings to invalid Assembly 'GamePlugin.core' from DualityApp.Mouse. This is a common problem when registering global events from within a CorePlugin without properly unregistering them later. Please make sure that all events are unregistered in CorePlugin::OnDisposePlugin().
+[Core] Msg: Shutting down .Net Framework...
+[Core] Msg: DualityApp terminated

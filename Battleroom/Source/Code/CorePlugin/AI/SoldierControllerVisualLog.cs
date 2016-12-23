@@ -30,7 +30,9 @@ namespace Battleroom.AI
                 }
             }
 
-            VisualLog.Default.DrawText(20, 20, controller.PathingState.ToString());
+            //VisualLog.Default.DrawText(20, 20, controller.State.ToString());
+            VisualLog.Default.DrawText(10, 30, "Y: " + controller.SoldierMovement.Body.LinearVelocity.Y);
+            VisualLog.Default.DrawText(10, 50, "X: " + controller.SoldierMovement.Body.LinearVelocity.X);
         }
     }
 }

@@ -36,7 +36,7 @@ namespace Battleroom
             base.OnBeforeUpdate();
             cmdOverlay.OnUpdate();
 
-            //VisualLog.Default.DrawText(10, 10, "FPS: " + Time.Fps);
+            VisualLog.Default.DrawText(10, 10, "FPS: " + Time.Fps);
         }
     }
 }
