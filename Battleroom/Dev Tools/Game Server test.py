@@ -8,19 +8,17 @@ import socket
 import sys
 
 host = "127.0.0.1"
-port = 5000
+port = 8888
  
-mySocket = socket.socket()
+mySocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 mySocket.bind((host,port))
- 
-mySocket.listen(1)
-conn, addr = mySocket.accept()
-print ("Connection from: " + str(addr))
+print ("bound to: " + host + ":" + str(port))
+print ("waiting for messages...")
 while True:
-        data = conn.recv(1024).decode()
+        (data, address) = mySocket.recvfrom(1024)
         if not data:
                 break
-        print ("recv: " + str(data))
+        print ("recv: " + str(data.decode()))
          
         #data = str(data).upper()
         #print ("sending: " + str(data))

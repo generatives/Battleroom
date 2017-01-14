@@ -17,9 +17,6 @@ message = input(" -> ")
 while message != 'q':
         sent = mySocket.sendto(message.encode(), (host,port))
         
-        data, addr = mySocket.recvfrom(1024)
-        print ('Received from server: ' + data)
-         
         message = input(" -> ")
          
 mySocket.close()
